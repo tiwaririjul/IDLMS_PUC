@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 220" width="100%" height="100%">
+  <defs>
+    <linearGradient id="yellowBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FACC15"/>
+      <stop offset="100%" stop-color="#EAB308"/>
+    </linearGradient>
+  </defs>
+  <rect width="160" height="220" rx="6" fill="url(#yellowBg)"/>
+  <rect x="0" y="0" width="8" height="220" fill="black" opacity="0.15"/>
+  
+  <text x="80" y="55" font-family="'Impact', 'Arial Black', sans-serif" font-weight="900" font-size="34" fill="#000000" text-anchor="middle" letter-spacing="-1">DEEP</text>
+  <text x="80" y="92" font-family="'Impact', 'Arial Black', sans-serif" font-weight="900" font-size="34" fill="#000000" text-anchor="middle" letter-spacing="-1">WORK</text>
+  
+  <rect x="40" y="112" width="80" height="2.5" fill="#000000"/>
+  
+  <text x="80" y="132" font-family="'Inter', sans-serif" font-weight="600" font-size="7" fill="#1F2937" text-anchor="middle" letter-spacing="0.5">RULES FOR FOCUSED SUCCESS</text>
+  <text x="80" y="143" font-family="'Inter', sans-serif" font-weight="600" font-size="7" fill="#1F2937" text-anchor="middle" letter-spacing="0.5">IN A DISTRACTED WORLD</text>
+  
+  <text x="80" y="185" font-family="'Inter', sans-serif" font-weight="800" font-size="13" fill="#000000" text-anchor="middle">Cal Newport</text>
+</svg>

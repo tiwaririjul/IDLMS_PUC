@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDLMS - Search Results</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/search-results.css">
+</head>
+<body>
+    <div class="app-layout">
+        <!-- ==================== SIDEBAR ==================== -->
+        <aside class="sidebar">
+            <div class="sidebar-top-group">
+                <!-- Logo -->
+                <div class="sidebar-header">
+                    <a href="dashboard.html" class="sidebar-logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                        </svg>
+                        IDLMS
+                    </a>
+                </div>
+
+                <!-- Navigation Links -->
+                <nav class="sidebar-nav">
+                    <a href="dashboard.html" class="nav-link active">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path>
+                        </svg>
+                        <span>Dashboard</span>
+                    </a>
+
+                    <a href="discover.html" class="nav-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                        <span>Discover</span>
+                    </a>
+
+                    <a href="borrowings.html" class="nav-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"></path>
+                            <path d="M6 6h10"></path>
+                            <path d="M6 10h10"></path>
+                        </svg>
+                        <span>My Borrowings</span>
+                    </a>
+
+                    <a href="reservations.html" class="nav-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect>
+                            <line x1="16" x2="16" y1="2" y2="6"></line>
+                            <line x1="8" x2="8" y1="2" y2="6"></line>
+                            <line x1="3" x2="21" y1="10" y2="10"></line>
+                        </svg>
+                        <span>Reservations</span>
+                    </a>
+
+                    <a href="digital-library.html" class="nav-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                        </svg>
+                        <span>Digital Library</span>
+                    </a>
+
+                    <a href="reading-history.html" class="nav-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 14 14"></polyline>
+                        </svg>
+                        <span>Reading History</span>
+                    </a>
+
+                    <a href="fines.html" class="nav-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path>
+                            <path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path>
+                            <path d="M7 21h10"></path>
+                            <path d="M12 3v18"></path>
+                            <path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"></path>
+                        </svg>
+                        <span>Fines</span>
+                    </a>
+
+                    <a href="#" class="nav-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"></path>
+                        </svg>
+                        <span>AI Assistant</span>
+                        <span class="nav-badge nav-badge-purple">New</span>
+                    </a>
+
+                    <a href="#" class="nav-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"></path>
+                            <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"></path>
+                        </svg>
+                        <span>Notifications</span>
+                        <span class="nav-dot"></span>
+                    </a>
+
+                    <a href="#" class="nav-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                        <span>Profile</span>
+                    </a>
+
+                    <a href="#" class="nav-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg>
+                        <span>Settings</span>
+                    </a>
+                </nav>
+            </div>
+
+            <!-- Bottom Promo Card -->
+            <div class="sidebar-promo">
+                <div class="sidebar-promo-img-wrap">
+                    <img src="assets/images/digital-lib-promo.svg" alt="Explore the digital library">
+                </div>
+                <h4>Explore the digital library</h4>
+                <p>Thousands of e-books, journals and resources at your fingertips.</p>
+                <a href="digital-library.html">Explore Now &rarr;</a>
+            </div>
+        </aside>
+
+        <!-- ==================== MAIN CONTENT WRAPPER ==================== -->
+        <div class="main-wrapper">
+            <!-- Top Header -->
+            <header class="top-header">
+                <form class="header-search" id="headerSearchForm" action="search-results.html" method="GET">
+                    <svg class="header-search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <input type="text" name="q" id="globalSearchInput" class="header-search-input" value="books for learning how computers communicate over networks" placeholder="Search books, authors, topics, ISBN...">
+                    <span class="search-shortcut-kbd">&#8984; K</span>
+                </form>
+
+                <div class="header-right">
+                    <!-- Notifications -->
+                    <div class="dropdown-container">
+                        <button type="button" class="header-notification-btn" id="notifBtn" title="Notifications">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"></path>
+                                <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"></path>
+                            </svg>
+                            <span class="notification-count-badge">3</span>
+                        </button>
+                        <div class="popover-menu" id="notifMenu" style="width: 280px;">
+                            <div style="padding: 0.5rem 1rem; font-weight: 700; font-size: 0.85rem; border-bottom: 1px solid #E5E7EB;">
+                                Notifications (3)
+                            </div>
+                            <div class="popover-item" style="flex-direction: column; align-items: flex-start; gap: 2px;">
+                                <span style="font-weight: 600; color: #111827;">Book Due in 2 days</span>
+                                <span style="font-size: 0.72rem; color: #6B7280;">Deep Work is due on 26 May 2025</span>
+                            </div>
+                            <div class="popover-item" style="flex-direction: column; align-items: flex-start; gap: 2px;">
+                                <span style="font-weight: 600; color: #111827;">Reservation Available</span>
+                                <span style="font-size: 0.72rem; color: #6B7280;">Thinking, Fast and Slow is ready for pickup</span>
+                            </div>
+                            <div class="popover-item" style="flex-direction: column; align-items: flex-start; gap: 2px;">
+                                <span style="font-weight: 600; color: #DC2626;">Fine Reminder</span>
+                                <span style="font-size: 0.72rem; color: #6B7280;">Outstanding library balance: ₹120</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- User Profile -->
+                    <div class="dropdown-container">
+                        <div class="user-profile-widget" id="profileWidget">
+                            <img src="assets/images/avatar.svg" alt="Rijul Patel" class="user-avatar-img">
+                            <div class="user-meta">
+                                <span class="user-name">Rijul Patel</span>
+                                <span class="user-member-id">Member ID: 20240078</span>
+                            </div>
+                        </div>
+                        <div class="popover-menu" id="profileMenu">
+                            <a href="#" class="popover-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                                <span>My Profile</span>
+                            </a>
+                            <a href="borrowings.html" class="popover-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"></path></svg>
+                                <span>Borrowing History</span>
+                            </a>
+                            <a href="#" class="popover-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path></svg>
+                                <span>Account Settings</span>
+                            </a>
+                            <div class="popover-divider"></div>
+                            <a href="index.html" class="popover-item" style="color: #DC2626;">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: #DC2626;"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+                                <span>Sign Out</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Main Search Results Body -->
+            <main class="search-results-main">
+                <!-- Page Header Bar -->
+                <div class="search-header-bar">
+                    <div class="search-title-group">
+                        <h1 class="search-page-title">Search Results</h1>
+                        <p class="search-page-subtitle">Showing results for "books for learning how computers communicate over networks"</p>
+                    </div>
+
+                    <div class="search-controls-right">
+                        <select class="search-sort-select" id="searchSortSelect">
+                            <option value="relevance">Sort by Relevance</option>
+                            <option value="newest">Sort by Newest</option>
+                            <option value="rating">Sort by Rating</option>
+                            <option value="popularity">Sort by Popularity</option>
+                        </select>
+                        <span class="search-results-counter">1-10 of 268 results</span>
+                    </div>
+                </div>
+
+                <!-- AI Semantic Search Callout Banner -->
+                <div class="ai-semantic-banner">
+                    <div class="ai-banner-left">
+                        <svg class="ai-banner-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"></path>
+                        </svg>
+                        <div class="ai-banner-text">
+                            <div class="ai-banner-title-row">
+                                <span class="ai-banner-title">AI Semantic Search</span>
+                                <span class="ai-banner-badge">Beta</span>
+                            </div>
+                            <span class="ai-banner-desc">Understanding your intent: books about computer networks, data communication, protocols, and related topics.</span>
+                        </div>
+                    </div>
+                    <a href="#" class="ai-banner-link" id="learnMoreAiBtn">
+                        <span>Learn more</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
+                    </a>
+                </div>
+
+                <!-- Main Layout Grid: Filters Left + Results Right -->
+                <div class="search-content-grid">
+                    <!-- Filters Sidebar -->
+                    <aside class="filters-sidebar-card">
+                        <div class="filters-header-row">
+                            <span class="filters-title">Filters</span>
+                            <button type="button" class="filters-clear-btn" id="clearFiltersBtn">Clear all</button>
+                        </div>
+
+                        <!-- Available Now -->
+                        <div class="filter-group">
+                            <span class="filter-group-label">Available Now</span>
+                            <label class="filter-checkbox-row">
+                                <div class="filter-checkbox-left">
+                                    <input type="checkbox" id="filterAvailable">
+                                    <span>Show only available</span>
+                                </div>
+                                <span class="filter-count">156</span>
+                            </label>
+                        </div>
+
+                        <!-- Resource Type -->
+                        <div class="filter-group">
+                            <span class="filter-group-label">Resource Type</span>
+                            <label class="filter-checkbox-row">
+                                <div class="filter-checkbox-left">
+                                    <input type="checkbox">
+                                    <span>Physical Books</span>
+                                </div>
+                                <span class="filter-count">182</span>
+                            </label>
+                            <label class="filter-checkbox-row">
+                                <div class="filter-checkbox-left">
+                                    <input type="checkbox">
+                                    <span>Digital Resources</span>
+                                </div>
+                                <span class="filter-count">146</span>
+                            </label>
+                        </div>
+
+                        <!-- Category -->
+                        <div class="filter-group">
+                            <span class="filter-group-label">Category</span>
+                            <select class="filter-select">
+                                <option value="">Select category</option>
+                                <option value="cs">Computer Science</option>
+                                <option value="eng">Engineering</option>
+                                <option value="math">Mathematics</option>
+                            </select>
+                        </div>
+
+                        <!-- Author -->
+                        <div class="filter-group">
+                            <span class="filter-group-label">Author</span>
+                            <div class="filter-search-input-wrap">
+                                <svg class="filter-search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                                <input type="text" class="filter-search-input" placeholder="Search author">
+                            </div>
+                        </div>
+
+                        <!-- Publication Year -->
+                        <div class="filter-group">
+                            <span class="filter-group-label">Publication Year</span>
+                            <div class="filter-year-row">
+                                <select class="filter-select">
+                                    <option value="">From</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2015">2015</option>
+                                    <option value="2010">2010</option>
+                                </select>
+                                <select class="filter-select">
+                                    <option value="">To</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2015">2015</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Language -->
+                        <div class="filter-group">
+                            <span class="filter-group-label">Language</span>
+                            <select class="filter-select">
+                                <option value="">Select language</option>
+                                <option value="en">English</option>
+                                <option value="es">Spanish</option>
+                                <option value="fr">French</option>
+                            </select>
+                        </div>
+
+                        <!-- Rating -->
+                        <div class="filter-group">
+                            <span class="filter-group-label">Rating</span>
+                            <label class="filter-checkbox-row">
+                                <div class="filter-checkbox-left">
+                                    <input type="checkbox">
+                                    <span class="rating-stars-gold">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                                    <span>&amp; up</span>
+                                </div>
+                                <span class="filter-count">(71)</span>
+                            </label>
+                            <label class="filter-checkbox-row">
+                                <div class="filter-checkbox-left">
+                                    <input type="checkbox">
+                                    <span class="rating-stars-gold">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                                    <span>&amp; up</span>
+                                </div>
+                                <span class="filter-count">(132)</span>
+                            </label>
+                            <label class="filter-checkbox-row">
+                                <div class="filter-checkbox-left">
+                                    <input type="checkbox">
+                                    <span class="rating-stars-gold">&#9733;&#9733;&#9733;&#9734;&#9734;</span>
+                                    <span>&amp; up</span>
+                                </div>
+                                <span class="filter-count">(208)</span>
+                            </label>
+                            <label class="filter-checkbox-row">
+                                <div class="filter-checkbox-left">
+                                    <input type="checkbox">
+                                    <span class="rating-stars-gold">&#9733;&#9733;&#9734;&#9734;&#9734;</span>
+                                    <span>&amp; up</span>
+                                </div>
+                                <span class="filter-count">(245)</span>
+                            </label>
+                        </div>
+
+                        <button type="button" class="btn-apply-filters" id="applyFiltersBtn">Apply Filters</button>
+                    </aside>
+
+                    <!-- Right Column: Results List -->
+                    <div class="search-results-list">
+                        <!-- Book 1: Computer Networking -->
+                        <div class="search-result-card" data-book-id="computer-networks">
+                            <img src="assets/images/covers/computer-networking.svg" alt="Computer Networking: A Top-Down Approach" class="result-cover-thumb">
+                            
+                            <div class="result-details-col">
+                                <div>
+                                    <h2 class="result-title"><a href="book-details.html?id=computer-networks&from=search-results" style="color: inherit; text-decoration: none;">Computer Networking: A Top-Down Approach</a></h2>
+                                    <span class="result-authors">James F. Kurose, Keith W. Ross</span>
+                                    <div class="result-meta-line">7th Edition &bull; Pearson &bull; 2016</div>
+                                    <p class="result-summary-text">The most popular networking text&mdash;clear, comprehensive, and hands-on. Covers the latest Internet technologies and protocols.</p>
+                                </div>
+
+                                <div class="result-meta-bottom">
+                                    <div class="result-rating-wrap">
+                                        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                        <span>4.7</span>
+                                        <span class="result-rating-count">(1,248)</span>
+                                    </div>
+                                    <span class="result-tag-pill">Computer Networks</span>
+                                </div>
+                            </div>
+
+                            <div class="result-actions-col">
+                                <div class="result-top-status">
+                                    <span class="badge-res-type badge-type-physical">Physical Book</span>
+                                    <button type="button" class="btn-card-dots" title="Options">&#8942;</button>
+                                </div>
+
+                                <div class="result-availability-group">
+                                    <div class="availability-status-row status-available">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                        <span>Available Now</span>
+                                    </div>
+                                    <span class="availability-location">Main Library &ndash; 3rd Floor</span>
+                                    <span class="availability-callno">QA76.6 .K87 2016</span>
+                                </div>
+
+                                <div class="result-btns-row">
+                                    <a href="book-details.html?id=computer-networks&from=search-results" class="btn-result-view">View Details</a>
+                                    <button type="button" class="btn-result-action" data-action="borrow" data-book="Computer Networking: A Top-Down Approach">Borrow</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Book 2: Data and Computer Communications -->
+                        <div class="search-result-card" data-book-id="data-communications">
+                            <img src="assets/images/covers/data-comm.svg" alt="Data and Computer Communications" class="result-cover-thumb">
+                            
+                            <div class="result-details-col">
+                                <div>
+                                    <h2 class="result-title"><a href="book-details.html?id=data-communications&from=search-results" style="color: inherit; text-decoration: none;">Data and Computer Communications</a></h2>
+                                    <span class="result-authors">William Stallings</span>
+                                    <div class="result-meta-line">10th Edition &bull; Pearson &bull; 2017</div>
+                                    <p class="result-summary-text">Comprehensive coverage of data communication principles and modern networking technologies.</p>
+                                </div>
+
+                                <div class="result-meta-bottom">
+                                    <div class="result-rating-wrap">
+                                        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                        <span>4.5</span>
+                                        <span class="result-rating-count">(892)</span>
+                                    </div>
+                                    <span class="result-tag-pill">Data Communications</span>
+                                </div>
+                            </div>
+
+                            <div class="result-actions-col">
+                                <div class="result-top-status">
+                                    <span class="badge-res-type badge-type-physical">Physical Book</span>
+                                    <button type="button" class="btn-card-dots" title="Options">&#8942;</button>
+                                </div>
+
+                                <div class="result-availability-group">
+                                    <div class="availability-status-row status-available">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                        <span>Available Now</span>
+                                    </div>
+                                    <span class="availability-location">Main Library &ndash; 2nd Floor</span>
+                                    <span class="availability-callno">TK5105.5 .S73 2017</span>
+                                </div>
+
+                                <div class="result-btns-row">
+                                    <a href="book-details.html?id=data-communications&from=search-results" class="btn-result-view">View Details</a>
+                                    <button type="button" class="btn-result-action" data-action="borrow" data-book="Data and Computer Communications">Borrow</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Book 3: Computer Networks and Internets -->
+                        <div class="search-result-card" data-book-id="computer-networks-internets">
+                            <img src="assets/images/covers/computer-networks-internets.svg" alt="Computer Networks and Internets" class="result-cover-thumb">
+                            
+                            <div class="result-details-col">
+                                <div>
+                                    <h2 class="result-title"><a href="book-details.html?id=computer-networks-internets&from=search-results" style="color: inherit; text-decoration: none;">Computer Networks and Internets</a></h2>
+                                    <span class="result-authors">Douglas E. Comer</span>
+                                    <div class="result-meta-line">6th Edition &bull; Pearson &bull; 2019</div>
+                                    <p class="result-summary-text">A clear, insight-oriented introduction to computer networking and the Internet.</p>
+                                </div>
+
+                                <div class="result-meta-bottom">
+                                    <div class="result-rating-wrap">
+                                        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                        <span>4.4</span>
+                                        <span class="result-rating-count">(678)</span>
+                                    </div>
+                                    <span class="result-tag-pill">Computer Networks</span>
+                                </div>
+                            </div>
+
+                            <div class="result-actions-col">
+                                <div class="result-top-status">
+                                    <span class="badge-res-type badge-type-ebook">E-Book</span>
+                                    <button type="button" class="btn-card-dots" title="Options">&#8942;</button>
+                                </div>
+
+                                <div class="result-availability-group">
+                                    <div class="availability-status-row status-available">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                        <span>Available Now</span>
+                                    </div>
+                                    <span class="availability-location">Online Resource</span>
+                                </div>
+
+                                <div class="result-btns-row">
+                                    <a href="book-details.html?id=computer-networks-internets&from=search-results" class="btn-result-view">View Details</a>
+                                    <a href="#" class="btn-result-action" data-action="read" data-book="Computer Networks and Internets">
+                                        <span>Read Online</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Book 4: TCP/IP Illustrated -->
+                        <div class="search-result-card" data-book-id="tcp-ip-illustrated">
+                            <img src="assets/images/covers/tcp-ip-illustrated.svg" alt="TCP/IP Illustrated, Volume 1: The Protocols" class="result-cover-thumb">
+                            
+                            <div class="result-details-col">
+                                <div>
+                                    <h2 class="result-title"><a href="book-details.html?id=tcp-ip-illustrated&from=search-results" style="color: inherit; text-decoration: none;">TCP/IP Illustrated, Volume 1: The Protocols</a></h2>
+                                    <span class="result-authors">W. Richard Stevens</span>
+                                    <div class="result-meta-line">2nd Edition &bull; Addison-Wesley &bull; 2011</div>
+                                    <p class="result-summary-text">The classic, in-depth guide to TCP/IP protocols and architecture.</p>
+                                </div>
+
+                                <div class="result-meta-bottom">
+                                    <div class="result-rating-wrap">
+                                        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                        <span>4.8</span>
+                                        <span class="result-rating-count">(1,103)</span>
+                                    </div>
+                                    <span class="result-tag-pill">Networking Protocols</span>
+                                </div>
+                            </div>
+
+                            <div class="result-actions-col">
+                                <div class="result-top-status">
+                                    <span class="badge-res-type badge-type-ebook">E-Book</span>
+                                    <button type="button" class="btn-card-dots" title="Options">&#8942;</button>
+                                </div>
+
+                                <div class="result-availability-group">
+                                    <div class="availability-status-row status-available">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                        <span>Available Now</span>
+                                    </div>
+                                    <span class="availability-location">Online Resource</span>
+                                </div>
+
+                                <div class="result-btns-row">
+                                    <a href="book-details.html?id=tcp-ip-illustrated&from=search-results" class="btn-result-view">View Details</a>
+                                    <a href="#" class="btn-result-action" data-action="read" data-book="TCP/IP Illustrated, Volume 1: The Protocols">
+                                        <span>Read Online</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Book 5: CCNA 200-301 -->
+                        <div class="search-result-card" data-book-id="ccna-cert-guide">
+                            <img src="assets/images/covers/ccna-cert-guide.svg" alt="CCNA 200-301 Official Cert Guide, Volume 1" class="result-cover-thumb">
+                            
+                            <div class="result-details-col">
+                                <div>
+                                    <h2 class="result-title"><a href="book-details.html?id=ccna-cert-guide&from=search-results" style="color: inherit; text-decoration: none;">CCNA 200-301 Official Cert Guide, Volume 1</a></h2>
+                                    <span class="result-authors">Wendell Odom</span>
+                                    <div class="result-meta-line">1st Edition &bull; Cisco Press &bull; 2020</div>
+                                    <p class="result-summary-text">Complete preparation for the CCNA 200-301 exam with real-world examples and hands-on labs.</p>
+                                </div>
+
+                                <div class="result-meta-bottom">
+                                    <div class="result-rating-wrap">
+                                        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                        <span>4.6</span>
+                                        <span class="result-rating-count">(556)</span>
+                                    </div>
+                                    <span class="result-tag-pill">Networking</span>
+                                </div>
+                            </div>
+
+                            <div class="result-actions-col">
+                                <div class="result-top-status">
+                                    <span class="badge-res-type badge-type-physical">Physical Book</span>
+                                    <button type="button" class="btn-card-dots" title="Options">&#8942;</button>
+                                </div>
+
+                                <div class="result-availability-group">
+                                    <div class="availability-status-row status-due-soon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                        <span>Due Soon</span>
+                                    </div>
+                                    <span class="availability-location">Due in 2 days &bull; Main Library &ndash; 3rd Floor</span>
+                                    <span class="availability-callno">TK7871 .O36 2020</span>
+                                </div>
+
+                                <div class="result-btns-row">
+                                    <a href="book-details.html?id=ccna-cert-guide&from=search-results" class="btn-result-view">View Details</a>
+                                    <button type="button" class="btn-result-reserve" data-action="reserve" data-book="CCNA 200-301 Official Cert Guide, Volume 1">Reserve</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <footer class="app-footer">
+                    <div>&copy; 2025 IDLMS. All rights reserved.</div>
+                    <div class="footer-nav-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Use</a>
+                        <a href="#">Help Center</a>
+                    </div>
+                </footer>
+            </main>
+        </div>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

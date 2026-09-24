@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDLMS - Fines</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/fines.css">
+</head>
+<body>
+    <div class="app-layout">
+        <!-- ==================== SIDEBAR ==================== -->
+        <aside class="sidebar">
+            <div class="sidebar-top-group">
+                <!-- Logo -->
+                <div class="sidebar-header">
+                    <a href="dashboard.html" class="sidebar-logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                        </svg>
+                        IDLMS
+                    </a>
+                </div>
+
+                <!-- Navigation Links -->
+                <nav class="sidebar-nav">
+                    <a href="dashboard.html" class="nav-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path>
+                        </svg>
+                        <span>Dashboard</span>
+                    </a>
+
+                    <a href="discover.html" class="nav-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                        <span>Discover</span>
+                    </a>
+
+                    <a href="borrowings.html" class="nav-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"></path>
+                            <path d="M6 6h10"></path>
+                            <path d="M6 10h10"></path>
+                        </svg>
+                        <span>My Borrowings</span>
+                    </a>
+
+                    <a href="reservations.html" class="nav-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect>
+                            <line x1="16" x2="16" y1="2" y2="6"></line>
+                            <line x1="8" x2="8" y1="2" y2="6"></line>
+                            <line x1="3" x2="21" y1="10" y2="10"></line>
+                        </svg>
+                        <span>Reservations</span>
+                    </a>
+
+                    <a href="digital-library.html" class="nav-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                        </svg>
+                        <span>Digital Library</span>
+                    </a>
+
+                    <a href="reading-history.html" class="nav-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 14 14"></polyline>
+                        </svg>
+                        <span>Reading History</span>
+                    </a>
+
+                    <a href="fines.html" class="nav-link active">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path>
+                            <path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path>
+                            <path d="M7 21h10"></path>
+                            <path d="M12 3v18"></path>
+                            <path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"></path>
+                        </svg>
+                        <span>Fines</span>
+                    </a>
+
+                    <a href="#" class="nav-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"></path>
+                        </svg>
+                        <span>AI Assistant</span>
+                        <span class="nav-badge nav-badge-purple">New</span>
+                    </a>
+
+                    <a href="#" class="nav-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"></path>
+                            <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"></path>
+                        </svg>
+                        <span>Notifications</span>
+                        <span class="nav-badge-dot"></span>
+                    </a>
+
+                    <a href="#" class="nav-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                        <span>Profile</span>
+                    </a>
+
+                    <a href="#" class="nav-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg>
+                        <span>Settings</span>
+                    </a>
+                </nav>
+            </div>
+
+            <!-- Bottom Promo Card -->
+            <div class="sidebar-promo">
+                <div class="sidebar-promo-img-wrap">
+                    <img src="assets/images/digital-lib-promo.svg" alt="Explore the digital library">
+                </div>
+                <h4>Explore the digital library</h4>
+                <p>Thousands of e-books, journals and resources at your fingertips.</p>
+                <a href="digital-library.html">Explore Now &rarr;</a>
+            </div>
+        </aside>
+
+        <!-- ==================== MAIN CONTENT WRAPPER ==================== -->
+        <div class="main-wrapper">
+            <!-- Global Top Header -->
+            <header class="top-header">
+                <!-- Search Form -->
+                <form class="header-search" id="headerSearchForm" action="search-results.html" method="GET">
+                    <svg class="header-search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <input type="text" name="q" class="header-search-input" id="globalSearchInput" placeholder="Search books, authors, topics, ISBN...">
+                    <div class="search-shortcut" title="Keyboard Shortcut">
+                        <kbd class="search-shortcut-kbd">&#8984; K</kbd>
+                    </div>
+                </form>
+
+                <!-- Header Right Actions -->
+                <div class="header-right">
+                    <!-- Notifications -->
+                    <div class="dropdown-container">
+                        <button type="button" class="header-notification-btn" id="notifBtn" title="Notifications">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"></path>
+                                <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"></path>
+                            </svg>
+                            <span class="notification-count-badge">3</span>
+                        </button>
+                        <div class="popover-menu" id="notifMenu" style="width: 280px;">
+                            <div style="padding: 0.5rem 1rem; font-weight: 700; font-size: 0.85rem; border-bottom: 1px solid #E5E7EB;">
+                                Notifications (3)
+                            </div>
+                            <div class="popover-item" style="flex-direction: column; align-items: flex-start; gap: 2px;">
+                                <span style="font-weight: 600; color: #111827;">Book Due in 2 days</span>
+                                <span style="font-size: 0.72rem; color: #6B7280;">Deep Work is due on 26 May 2025</span>
+                            </div>
+                            <div class="popover-item" style="flex-direction: column; align-items: flex-start; gap: 2px;">
+                                <span style="font-weight: 600; color: #111827;">Reservation Available</span>
+                                <span style="font-size: 0.72rem; color: #6B7280;">Thinking, Fast and Slow is ready for pickup</span>
+                            </div>
+                            <div class="popover-item" style="flex-direction: column; align-items: flex-start; gap: 2px;">
+                                <span style="font-weight: 600; color: #DC2626;">Fine Reminder</span>
+                                <span style="font-size: 0.72rem; color: #6B7280;">Outstanding library balance: ₹345.00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- User Profile -->
+                    <div class="dropdown-container">
+                        <div class="user-profile-widget" id="profileWidget">
+                            <img src="assets/images/avatar.svg" alt="Rijul Patel" class="user-avatar-img">
+                            <div class="user-meta">
+                                <span class="user-name">Rijul Patel</span>
+                                <span class="user-member-id">Member ID: 20240078</span>
+                            </div>
+                            <svg class="profile-chevron-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="popover-menu" id="profileMenu">
+                            <a href="#" class="popover-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                                <span>My Profile</span>
+                            </a>
+                            <a href="borrowings.html" class="popover-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"></path></svg>
+                                <span>My Borrowings</span>
+                            </a>
+                            <a href="reservations.html" class="popover-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg>
+                                <span>My Reservations</span>
+                            </a>
+                            <div class="popover-divider"></div>
+                            <a href="index.html" class="popover-item" style="color: #DC2626;">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: #DC2626;"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+                                <span>Sign Out</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Main Fines Page Content -->
+            <main class="fines-main">
+                <!-- Page Header with Title and Right Action Buttons -->
+                <div class="fines-header-section">
+                    <div class="fines-title-group">
+                        <h1 class="fines-page-title">Fines</h1>
+                        <p class="fines-page-subtitle">View and manage your library fines and payment history.</p>
+                    </div>
+
+                    <div class="fines-header-actions">
+                        <button type="button" class="btn-pay-all" id="btnPayAll">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect width="20" height="14" x="2" y="5" rx="2"></rect>
+                                <line x1="2" x2="22" y1="10" y2="10"></line>
+                            </svg>
+                            <span>Pay All Outstanding</span>
+                        </button>
+                        <button type="button" class="btn-payment-history" id="btnPaymentHistory">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+                                <path d="M3 3v5h5"></path>
+                                <circle cx="12" cy="12" r="1"></circle>
+                                <polyline points="12 7 12 12 15 15"></polyline>
+                            </svg>
+                            <span>Payment History</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Top 4 KPI Metrics Grid -->
+                <div class="fines-kpi-grid">
+                    <!-- Metric 1: Total Outstanding -->
+                    <div class="fines-kpi-card">
+                        <div class="fines-kpi-icon fines-icon-red">
+                            <span class="fines-icon-rupee">&#8377;</span>
+                        </div>
+                        <div class="fines-kpi-content">
+                            <span class="fines-kpi-label">Total Outstanding</span>
+                            <span class="fines-kpi-value" id="kpiOutstanding">&#8377;345.00</span>
+                            <span class="fines-kpi-subtext subtext-red" id="kpiUnpaidSubtext">2 unpaid fines</span>
+                        </div>
+                    </div>
+
+                    <!-- Metric 2: Total Paid -->
+                    <div class="fines-kpi-card">
+                        <div class="fines-kpi-icon fines-icon-green">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect width="20" height="14" x="2" y="5" rx="2"></rect>
+                                <line x1="2" x2="22" y1="10" y2="10"></line>
+                            </svg>
+                        </div>
+                        <div class="fines-kpi-content">
+                            <span class="fines-kpi-label">Total Paid</span>
+                            <span class="fines-kpi-value" id="kpiPaid">&#8377;1,250.00</span>
+                            <span class="fines-kpi-subtext subtext-green" id="kpiPaidSubtext">12 fines paid</span>
+                        </div>
+                    </div>
+
+                    <!-- Metric 3: Total Waived -->
+                    <div class="fines-kpi-card">
+                        <div class="fines-kpi-icon fines-icon-amber">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2H2v10l9.29 9.29c.94.94 2.48.94 3.42 0l6.58-6.58c.94-.94.94-2.48 0-3.42L12 2Z"></path>
+                                <path d="M7 7h.01"></path>
+                            </svg>
+                        </div>
+                        <div class="fines-kpi-content">
+                            <span class="fines-kpi-label">Total Waived</span>
+                            <span class="fines-kpi-value" id="kpiWaived">&#8377;150.00</span>
+                            <span class="fines-kpi-subtext subtext-amber" id="kpiWaivedSubtext">1 fine waived</span>
+                        </div>
+                    </div>
+
+                    <!-- Metric 4: Unpaid Fines -->
+                    <div class="fines-kpi-card">
+                        <div class="fines-kpi-icon fines-icon-purple">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="12" x2="12" y1="8" y2="12"></line>
+                                <line x1="12" x2="12.01" y1="16" y2="16"></line>
+                            </svg>
+                        </div>
+                        <div class="fines-kpi-content">
+                            <span class="fines-kpi-label">Unpaid Fines</span>
+                            <span class="fines-kpi-value" id="kpiUnpaidCount">2</span>
+                            <span class="fines-kpi-subtext subtext-muted">Require your attention</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main White Card: Fines Table -->
+                <div class="fines-table-card">
+                    <!-- Controls Bar: Filter Tabs & Sort Dropdown -->
+                    <div class="fines-controls-row">
+                        <div class="fines-tabs-group" id="finesTabsGroup">
+                            <button type="button" class="fines-tab-btn active" data-tab="all">
+                                <span>All Fines</span>
+                                <span class="fines-tab-pill active" id="tabCountAll">6</span>
+                            </button>
+
+                            <button type="button" class="fines-tab-btn" data-tab="unpaid">
+                                <span>Unpaid</span>
+                                <span class="fines-tab-pill" id="tabCountUnpaid">2</span>
+                            </button>
+
+                            <button type="button" class="fines-tab-btn" data-tab="paid">
+                                <span>Paid</span>
+                                <span class="fines-tab-pill" id="tabCountPaid">3</span>
+                            </button>
+
+                            <button type="button" class="fines-tab-btn" data-tab="waived">
+                                <span>Waived</span>
+                                <span class="fines-tab-pill" id="tabCountWaived">1</span>
+                            </button>
+                        </div>
+
+                        <div class="fines-sort-wrap">
+                            <select class="fines-sort-select" id="finesSortSelect">
+                                <option value="newest">Sort by: Date (Newest)</option>
+                                <option value="oldest">Sort by: Date (Oldest)</option>
+                                <option value="amount-high">Sort by: Fine Amount (High to Low)</option>
+                                <option value="amount-low">Sort by: Fine Amount (Low to High)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Fines Table -->
+                    <div class="fines-table-wrapper">
+                        <table class="fines-table" id="finesTable">
+                            <thead>
+                                <tr>
+                                    <th>Resource</th>
+                                    <th>Overdue Days</th>
+                                    <th>Fine Amount</th>
+                                    <th>Status</th>
+                                    <th>Date</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="finesTableBody">
+                                <!-- Row 1: Deep Work -->
+                                <tr data-id="deep-work" data-status="unpaid" data-amount="75" data-date="2025-05-26">
+                                    <td>
+                                        <div class="resource-cell-wrap">
+                                            <a href="book-details.html?id=deep-work&from=fines">
+                                                <img src="assets/images/covers/deep-work.svg" alt="Deep Work" class="resource-cover-thumb">
+                                            </a>
+                                            <div class="resource-text-meta">
+                                                <a href="book-details.html?id=deep-work&from=fines" class="resource-title-link">Deep Work</a>
+                                                <span class="resource-author-text">Cal Newport</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="overdue-days-red">5 days</span>
+                                    </td>
+                                    <td>
+                                        <span class="fine-amount-val">&#8377;75.00</span>
+                                    </td>
+                                    <td>
+                                        <span class="fines-status-badge badge-pending">Pending</span>
+                                    </td>
+                                    <td>
+                                        <div class="date-stack-cell">
+                                            <span class="date-action-label">Due on</span>
+                                            <span class="date-action-val">26 May 2025</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="actions-cell-wrap">
+                                            <button type="button" class="btn-row-pay" data-book="deep-work" data-title="Deep Work" data-fine="75.00">Pay Now</button>
+                                            <a href="book-details.html?id=deep-work&from=fines" class="link-row-details">View Details &rarr;</a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <!-- Row 2: Atomic Habits -->
+                                <tr data-id="atomic-habits" data-status="unpaid" data-amount="45" data-date="2025-05-28">
+                                    <td>
+                                        <div class="resource-cell-wrap">
+                                            <a href="book-details.html?id=atomic-habits&from=fines">
+                                                <img src="assets/images/covers/atomic-habits.svg" alt="Atomic Habits" class="resource-cover-thumb">
+                                            </a>
+                                            <div class="resource-text-meta">
+                                                <a href="book-details.html?id=atomic-habits&from=fines" class="resource-title-link">Atomic Habits</a>
+                                                <span class="resource-author-text">James Clear</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="overdue-days-red">2 days</span>
+                                    </td>
+                                    <td>
+                                        <span class="fine-amount-val">&#8377;45.00</span>
+                                    </td>
+                                    <td>
+                                        <span class="fines-status-badge badge-pending">Pending</span>
+                                    </td>
+                                    <td>
+                                        <div class="date-stack-cell">
+                                            <span class="date-action-label">Due on</span>
+                                            <span class="date-action-val">28 May 2025</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="actions-cell-wrap">
+                                            <button type="button" class="btn-row-pay" data-book="atomic-habits" data-title="Atomic Habits" data-fine="45.00">Pay Now</button>
+                                            <a href="book-details.html?id=atomic-habits&from=fines" class="link-row-details">View Details &rarr;</a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <!-- Row 3: Clean Code -->
+                                <tr data-id="clean-code" data-status="paid" data-amount="90" data-date="2025-05-15">
+                                    <td>
+                                        <div class="resource-cell-wrap">
+                                            <a href="book-details.html?id=clean-code&from=fines">
+                                                <img src="assets/images/covers/clean-code.svg" alt="Clean Code" class="resource-cover-thumb">
+                                            </a>
+                                            <div class="resource-text-meta">
+                                                <a href="book-details.html?id=clean-code&from=fines" class="resource-title-link">Clean Code</a>
+                                                <span class="resource-author-text">Robert C. Martin</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="overdue-days-red">18 days</span>
+                                    </td>
+                                    <td>
+                                        <span class="fine-amount-val">&#8377;90.00</span>
+                                    </td>
+                                    <td>
+                                        <span class="fines-status-badge badge-paid">Paid</span>
+                                    </td>
+                                    <td>
+                                        <div class="date-stack-cell">
+                                            <span class="date-action-label">Paid on</span>
+                                            <span class="date-action-val">15 May 2025</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="actions-cell-wrap">
+                                            <a href="book-details.html?id=clean-code&from=fines" class="link-row-details">View Details &rarr;</a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <!-- Row 4: The 7 Habits of Highly Effective People -->
+                                <tr data-id="seven-habits" data-status="paid" data-amount="60" data-date="2025-05-10">
+                                    <td>
+                                        <div class="resource-cell-wrap">
+                                            <a href="book-details.html?id=seven-habits&from=fines">
+                                                <img src="assets/images/covers/seven-habits.svg" alt="The 7 Habits of Highly Effective People" class="resource-cover-thumb">
+                                            </a>
+                                            <div class="resource-text-meta">
+                                                <a href="book-details.html?id=seven-habits&from=fines" class="resource-title-link">The 7 Habits of Highly Effective People</a>
+                                                <span class="resource-author-text">Stephen R. Covey</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="overdue-days-red">12 days</span>
+                                    </td>
+                                    <td>
+                                        <span class="fine-amount-val">&#8377;60.00</span>
+                                    </td>
+                                    <td>
+                                        <span class="fines-status-badge badge-paid">Paid</span>
+                                    </td>
+                                    <td>
+                                        <div class="date-stack-cell">
+                                            <span class="date-action-label">Paid on</span>
+                                            <span class="date-action-val">10 May 2025</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="actions-cell-wrap">
+                                            <a href="book-details.html?id=seven-habits&from=fines" class="link-row-details">View Details &rarr;</a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <!-- Row 5: Mindset -->
+                                <tr data-id="mindset" data-status="waived" data-amount="30" data-date="2025-05-05">
+                                    <td>
+                                        <div class="resource-cell-wrap">
+                                            <a href="book-details.html?id=mindset&from=fines">
+                                                <img src="assets/images/covers/mindset.svg" alt="Mindset" class="resource-cover-thumb">
+                                            </a>
+                                            <div class="resource-text-meta">
+                                                <a href="book-details.html?id=mindset&from=fines" class="resource-title-link">Mindset</a>
+                                                <span class="resource-author-text">Carol S. Dweck</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="overdue-dash">&mdash;</span>
+                                    </td>
+                                    <td>
+                                        <span class="fine-amount-val">&#8377;30.00</span>
+                                    </td>
+                                    <td>
+                                        <span class="fines-status-badge badge-waived">Waived</span>
+                                    </td>
+                                    <td>
+                                        <div class="date-stack-cell">
+                                            <span class="date-action-label">Waived on</span>
+                                            <span class="date-action-val">05 May 2025</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="actions-cell-wrap">
+                                            <a href="book-details.html?id=mindset&from=fines" class="link-row-details">View Details &rarr;</a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <!-- Row 6: Sapiens -->
+                                <tr data-id="sapiens" data-status="paid" data-amount="45" data-date="2025-05-01">
+                                    <td>
+                                        <div class="resource-cell-wrap">
+                                            <a href="book-details.html?id=sapiens&from=fines">
+                                                <img src="assets/images/covers/sapiens.svg" alt="Sapiens" class="resource-cover-thumb">
+                                            </a>
+                                            <div class="resource-text-meta">
+                                                <a href="book-details.html?id=sapiens&from=fines" class="resource-title-link">Sapiens</a>
+                                                <span class="resource-author-text">Yuval Noah Harari</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="overdue-dash">&mdash;</span>
+                                    </td>
+                                    <td>
+                                        <span class="fine-amount-val">&#8377;45.00</span>
+                                    </td>
+                                    <td>
+                                        <span class="fines-status-badge badge-paid">Paid</span>
+                                    </td>
+                                    <td>
+                                        <div class="date-stack-cell">
+                                            <span class="date-action-label">Paid on</span>
+                                            <span class="date-action-val">01 May 2025</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="actions-cell-wrap">
+                                            <a href="book-details.html?id=sapiens&from=fines" class="link-row-details">View Details &rarr;</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Bottom Information Banner -->
+                    <div class="fines-info-banner">
+                        <svg class="fines-info-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path fill-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="fines-info-text">Fines are charged per day for overdue items as per library policy. Paying fines helps keep the library running for everyone.</span>
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <footer class="app-footer">
+                    <div>&copy; 2025 IDLMS. All rights reserved.</div>
+                    <div class="footer-nav-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Use</a>
+                        <a href="#">Help Center</a>
+                    </div>
+                </footer>
+            </main>
+        </div>
+    </div>
+
+    <!-- Payment Modal -->
+    <div class="modal-overlay" id="paymentModal">
+        <div class="fines-modal-card">
+            <div class="fines-modal-header">
+                <h3 class="fines-modal-title" id="paymentModalTitle">Pay Outstanding Fines</h3>
+                <button type="button" class="fines-modal-close" id="closePaymentModal">&times;</button>
+            </div>
+            <div class="fines-modal-body">
+                <div class="payment-summary-box">
+                    <div class="summary-line-item" id="summaryBookRow">
+                        <span id="summaryBookTitle">Total Overdue Fines</span>
+                        <span id="summaryBookAmount">&#8377;345.00</span>
+                    </div>
+                    <div class="summary-line-item">
+                        <span>Library Convenience Fee</span>
+                        <span>&#8377;0.00</span>
+                    </div>
+                    <div class="summary-total-item">
+                        <span>Total Payable</span>
+                        <span id="summaryTotalAmount">&#8377;345.00</span>
+                    </div>
+                </div>
+
+                <div class="payment-methods-title">Select Payment Mode</div>
+                <div class="payment-options-group">
+                    <label class="payment-option-label">
+                        <input type="radio" name="payMethod" value="upi" checked>
+                        <span>UPI (Google Pay, PhonePe, Paytm)</span>
+                    </label>
+                    <label class="payment-option-label">
+                        <input type="radio" name="payMethod" value="card">
+                        <span>Credit / Debit Card (Visa, Mastercard, RuPay)</span>
+                    </label>
+                    <label class="payment-option-label">
+                        <input type="radio" name="payMethod" value="netbanking">
+                        <span>Net Banking (SBI, HDFC, ICICI, Axis)</span>
+                    </label>
+                </div>
+            </div>
+            <div class="fines-modal-footer">
+                <button type="button" class="btn-modal-cancel" id="cancelPaymentBtn">Cancel</button>
+                <button type="button" class="btn-modal-pay" id="confirmPaymentBtn">Proceed to Pay</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Payment History Modal -->
+    <div class="modal-overlay" id="historyModal">
+        <div class="fines-modal-card" style="max-width: 600px;">
+            <div class="fines-modal-header">
+                <h3 class="fines-modal-title">Payment History Receipts</h3>
+                <button type="button" class="fines-modal-close" id="closeHistoryModal">&times;</button>
+            </div>
+            <div class="fines-modal-body" style="gap: 1rem; max-height: 450px; overflow-y: auto;">
+                <div style="border: 1px solid var(--border-color); border-radius: 8px; padding: 1rem; display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <div style="font-weight: 600; font-size: 0.88rem; color: #111827;">Clean Code (Overdue 18 days)</div>
+                        <div style="font-size: 0.75rem; color: #6B7280; margin-top: 2px;">Receipt #RCP-2025-0515 &bull; 15 May 2025, 03:45 PM</div>
+                        <div style="font-size: 0.75rem; color: #16A34A; font-weight: 500; margin-top: 2px;">Paid via UPI (Ref: 412894102941)</div>
+                    </div>
+                    <div style="text-align: right;">
+                        <div style="font-weight: 700; font-size: 0.95rem; color: #111827;">&#8377;90.00</div>
+                        <button type="button" class="btn-row-pay" style="margin-top: 0.4rem; padding: 0.2rem 0.5rem;" onclick="showToast('Downloading Receipt RCP-2025-0515 (PDF)...', 'info')">Download</button>
+                    </div>
+                </div>
+
+                <div style="border: 1px solid var(--border-color); border-radius: 8px; padding: 1rem; display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <div style="font-weight: 600; font-size: 0.88rem; color: #111827;">The 7 Habits of Highly Effective People</div>
+                        <div style="font-size: 0.75rem; color: #6B7280; margin-top: 2px;">Receipt #RCP-2025-0510 &bull; 10 May 2025, 11:20 AM</div>
+                        <div style="font-size: 0.75rem; color: #16A34A; font-weight: 500; margin-top: 2px;">Paid via Net Banking</div>
+                    </div>
+                    <div style="text-align: right;">
+                        <div style="font-weight: 700; font-size: 0.95rem; color: #111827;">&#8377;60.00</div>
+                        <button type="button" class="btn-row-pay" style="margin-top: 0.4rem; padding: 0.2rem 0.5rem;" onclick="showToast('Downloading Receipt RCP-2025-0510 (PDF)...', 'info')">Download</button>
+                    </div>
+                </div>
+
+                <div style="border: 1px solid var(--border-color); border-radius: 8px; padding: 1rem; display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <div style="font-weight: 600; font-size: 0.88rem; color: #111827;">Sapiens: A Brief History of Humankind</div>
+                        <div style="font-size: 0.75rem; color: #6B7280; margin-top: 2px;">Receipt #RCP-2025-0501 &bull; 01 May 2025, 05:12 PM</div>
+                        <div style="font-size: 0.75rem; color: #16A34A; font-weight: 500; margin-top: 2px;">Paid via Debit Card</div>
+                    </div>
+                    <div style="text-align: right;">
+                        <div style="font-weight: 700; font-size: 0.95rem; color: #111827;">&#8377;45.00</div>
+                        <button type="button" class="btn-row-pay" style="margin-top: 0.4rem; padding: 0.2rem 0.5rem;" onclick="showToast('Downloading Receipt RCP-2025-0501 (PDF)...', 'info')">Download</button>
+                    </div>
+                </div>
+            </div>
+            <div class="fines-modal-footer">
+                <button type="button" class="btn-modal-cancel" id="closeHistoryBtn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        // Dedicated interactive script for Fines page
+        document.addEventListener('DOMContentLoaded', () => {
+            const tabs = document.querySelectorAll('.fines-tab-btn');
+            const tableRows = document.querySelectorAll('#finesTableBody tr');
+            const sortSelect = document.getElementById('finesSortSelect');
+            const tableBody = document.getElementById('finesTableBody');
+
+            // Tab Filtering
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => {
+                        t.classList.remove('active');
+                        t.querySelector('.fines-tab-pill')?.classList.remove('active');
+                    });
+                    tab.classList.add('active');
+                    tab.querySelector('.fines-tab-pill')?.classList.add('active');
+
+                    const tabType = tab.getAttribute('data-tab');
+                    tableRows.forEach(row => {
+                        const status = row.getAttribute('data-status');
+                        if (tabType === 'all' || status === tabType) {
+                            row.style.display = '';
+                        } else {
+                            row.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // Sorting
+            sortSelect?.addEventListener('change', () => {
+                const val = sortSelect.value;
+                const rowsArray = Array.from(tableRows);
+
+                rowsArray.sort((a, b) => {
+                    if (val === 'newest') {
+                        return new Date(b.getAttribute('data-date')) - new Date(a.getAttribute('data-date'));
+                    } else if (val === 'oldest') {
+                        return new Date(a.getAttribute('data-date')) - new Date(b.getAttribute('data-date'));
+                    } else if (val === 'amount-high') {
+                        return parseFloat(b.getAttribute('data-amount')) - parseFloat(a.getAttribute('data-amount'));
+                    } else if (val === 'amount-low') {
+                        return parseFloat(a.getAttribute('data-amount')) - parseFloat(b.getAttribute('data-amount'));
+                    }
+                    return 0;
+                });
+
+                rowsArray.forEach(row => tableBody.appendChild(row));
+            });
+
+            // Payment Modals Logic
+            const paymentModal = document.getElementById('paymentModal');
+            const closePaymentModal = document.getElementById('closePaymentModal');
+            const cancelPaymentBtn = document.getElementById('cancelPaymentBtn');
+            const confirmPaymentBtn = document.getElementById('confirmPaymentBtn');
+            const btnPayAll = document.getElementById('btnPayAll');
+            const historyModal = document.getElementById('historyModal');
+            const btnPaymentHistory = document.getElementById('btnPaymentHistory');
+            const closeHistoryModal = document.getElementById('closeHistoryModal');
+            const closeHistoryBtn = document.getElementById('closeHistoryBtn');
+
+            let currentPayingBookId = null;
+
+            function openPayment(title, amount, bookId = null) {
+                currentPayingBookId = bookId;
+                document.getElementById('summaryBookTitle').textContent = title;
+                document.getElementById('summaryBookAmount').innerHTML = `&#8377;${amount}`;
+                document.getElementById('summaryTotalAmount').innerHTML = `&#8377;${amount}`;
+                document.getElementById('paymentModalTitle').textContent = bookId ? `Pay Fine: ${title}` : 'Pay Outstanding Fines';
+                paymentModal.classList.add('active');
+            }
+
+            function closePayment() {
+                paymentModal.classList.remove('active');
+                currentPayingBookId = null;
+            }
+
+            btnPayAll?.addEventListener('click', () => {
+                openPayment('All Outstanding Fines (2 Items)', '345.00', null);
+            });
+
+            document.querySelectorAll('.btn-row-pay').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const bookId = btn.getAttribute('data-book');
+                    const title = btn.getAttribute('data-title');
+                    const fine = btn.getAttribute('data-fine');
+                    openPayment(title, fine, bookId);
+                });
+            });
+
+            closePaymentModal?.addEventListener('click', closePayment);
+            cancelPaymentBtn?.addEventListener('click', closePayment);
+            paymentModal?.addEventListener('click', (e) => {
+                if (e.target === paymentModal) closePayment();
+            });
+
+            // Confirm payment simulation
+            confirmPaymentBtn?.addEventListener('click', () => {
+                closePayment();
+                if (currentPayingBookId) {
+                    // Paid single book
+                    const row = document.querySelector(`tr[data-id="${currentPayingBookId}"]`);
+                    if (row) {
+                        row.setAttribute('data-status', 'paid');
+                        const statusBadge = row.querySelector('.fines-status-badge');
+                        if (statusBadge) {
+                            statusBadge.className = 'fines-status-badge badge-paid';
+                            statusBadge.textContent = 'Paid';
+                        }
+                        const payBtn = row.querySelector('.btn-row-pay');
+                        if (payBtn) payBtn.remove();
+                    }
+                    showToast('Payment successful! Fine has been cleared.', 'success');
+                } else {
+                    // Paid all
+                    document.querySelectorAll('tr[data-status="unpaid"]').forEach(row => {
+                        row.setAttribute('data-status', 'paid');
+                        const statusBadge = row.querySelector('.fines-status-badge');
+                        if (statusBadge) {
+                            statusBadge.className = 'fines-status-badge badge-paid';
+                            statusBadge.textContent = 'Paid';
+                        }
+                        const payBtn = row.querySelector('.btn-row-pay');
+                        if (payBtn) payBtn.remove();
+                    });
+
+                    // Update KPIs
+                    document.getElementById('kpiOutstanding').innerHTML = '&#8377;0.00';
+                    document.getElementById('kpiUnpaidSubtext').textContent = '0 unpaid fines';
+                    document.getElementById('kpiUnpaidSubtext').className = 'fines-kpi-subtext subtext-muted';
+                    document.getElementById('kpiUnpaidCount').textContent = '0';
+                    document.getElementById('kpiPaid').innerHTML = '&#8377;1,595.00';
+                    document.getElementById('kpiPaidSubtext').textContent = '14 fines paid';
+
+                    // Update Tab pills
+                    document.getElementById('tabCountUnpaid').textContent = '0';
+                    document.getElementById('tabCountPaid').textContent = '5';
+
+                    showToast('All outstanding fines (₹345.00) paid successfully! Account is in good standing.', 'success');
+                }
+            });
+
+            // Payment History modal
+            btnPaymentHistory?.addEventListener('click', () => {
+                historyModal.classList.add('active');
+            });
+            closeHistoryModal?.addEventListener('click', () => historyModal.classList.remove('active'));
+            closeHistoryBtn?.addEventListener('click', () => historyModal.classList.remove('active'));
+            historyModal?.addEventListener('click', (e) => {
+                if (e.target === historyModal) historyModal.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

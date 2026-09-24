@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <clipPath id="avatarAnitaCircle">
+      <circle cx="50" cy="50" r="50"/>
+    </clipPath>
+    <linearGradient id="anitaBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCE7F3"/>
+      <stop offset="100%" stop-color="#E0E7FF"/>
+    </linearGradient>
+  </defs>
+  <g clip-path="url(#avatarAnitaCircle)">
+    <rect width="100" height="100" fill="url(#anitaBg)"/>
+    <!-- Shoulders / Blouse -->
+    <path d="M50,68 C32,68 18,78 14,95 C23,100 36,102 50,102 C64,102 77,100 86,95 C82,78 68,68 50,68 Z" fill="#4338CA"/>
+    <path d="M50,72 C42,72 38,82 38,95 L62,95 C62,82 58,72 50,72 Z" fill="#6366F1"/>
+    <!-- Neck -->
+    <rect x="44" y="54" width="12" height="16" fill="#E8B593"/>
+    <!-- Head -->
+    <ellipse cx="50" cy="45" rx="19" ry="21" fill="#F3C5A5"/>
+    <!-- Long Dark Hair Behind -->
+    <path d="M26,38 C24,58 26,75 32,85 C35,80 34,60 35,48 Z" fill="#18181B"/>
+    <path d="M74,38 C76,58 74,75 68,85 C65,80 66,60 65,48 Z" fill="#18181B"/>
+    <!-- Hair Top / Parting -->
+    <path d="M26,38 C25,20 36,12 50,12 C64,12 75,20 74,38 C68,26 58,22 50,22 C42,22 32,26 26,38 Z" fill="#18181B"/>
+    <!-- Forehead Hair Strands -->
+    <path d="M30,32 Q42,26 50,30 Q58,26 70,32 Q62,24 50,24 Q38,24 30,32 Z" fill="#27272A"/>
+    <!-- Eyes -->
+    <ellipse cx="42" cy="44" rx="2.5" ry="1.8" fill="#18181B"/>
+    <ellipse cx="58" cy="44" rx="2.5" ry="1.8" fill="#18181B"/>
+    <circle cx="43" cy="43.5" r="0.8" fill="#FFFFFF"/>
+    <circle cx="59" cy="43.5" r="0.8" fill="#FFFFFF"/>
+    <!-- Eyebrows -->
+    <path d="M37,39 Q42,37 47,39" stroke="#18181B" stroke-width="1.6" fill="none"/>
+    <path d="M53,39 Q58,37 63,39" stroke="#18181B" stroke-width="1.6" fill="none"/>
+    <!-- Nose -->
+    <path d="M49,47 L48,51 L52,51" stroke="#D49B74" stroke-width="1.2" fill="none"/>
+    <!-- Smile & Lips -->
+    <path d="M44,56 Q50,60 56,56" stroke="#BE123C" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    <!-- Earrings -->
+    <circle cx="30" cy="48" r="2" fill="#F59E0B"/>
+    <circle cx="70" cy="48" r="2" fill="#F59E0B"/>
+  </g>
+</svg>

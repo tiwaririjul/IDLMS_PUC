@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 220" width="100%" height="100%">
+  <rect width="160" height="220" rx="6" fill="#FDE047"/>
+  <rect x="0" y="0" width="8" height="220" fill="black" opacity="0.1"/>
+  <rect x="12" y="14" width="136" height="52" fill="#000000" rx="3"/>
+  <text x="80" y="32" font-family="'Inter', sans-serif" font-weight="900" font-size="12" fill="#FFFFFF" text-anchor="middle">PYTHON CRASH</text>
+  <text x="80" y="48" font-family="'Inter', sans-serif" font-weight="900" font-size="12" fill="#FACC15" text-anchor="middle">COURSE 3RD ED.</text>
+  <text x="80" y="60" font-family="'Inter', sans-serif" font-weight="600" font-size="6.5" fill="#E2E8F0" text-anchor="middle">A HANDS-ON, PROJECT-BASED</text>
+  <!-- Stylized Retro Rocket -->
+  <g transform="translate(80, 130) scale(0.7)">
+    <path d="M0,-45 C-15,-20 -20,10 -20,30 L20,30 C20,10 15,-20 0,-45 Z" fill="#000000"/>
+    <circle cx="0" cy="-5" r="7" fill="#FACC15"/>
+    <path d="M-20,20 L-35,35 L-20,32 Z" fill="#000000"/>
+    <path d="M20,20 L35,35 L20,32 Z" fill="#000000"/>
+    <polygon points="0,30 -8,45 8,45" fill="#EF4444"/>
+    <polygon points="0,30 -4,40 4,40" fill="#F97316"/>
+  </g>
+  <text x="80" y="198" font-family="'Inter', sans-serif" font-weight="800" font-size="8.5" fill="#000000" text-anchor="middle">Eric Matthes</text>
+</svg>

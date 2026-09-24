@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 220" width="100%" height="100%">
+  <defs>
+    <linearGradient id="seGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="50%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#475569"/>
+    </linearGradient>
+  </defs>
+  <rect width="160" height="220" rx="6" fill="url(#seGrad)"/>
+  <rect x="0" y="0" width="8" height="220" fill="black" opacity="0.25"/>
+  <text x="20" y="32" font-family="'Inter', sans-serif" font-weight="800" font-size="11.5" fill="#FFFFFF">Software</text>
+  <text x="20" y="46" font-family="'Inter', sans-serif" font-weight="800" font-size="11.5" fill="#FFFFFF">Engineering</text>
+  <text x="20" y="58" font-family="'Inter', sans-serif" font-weight="600" font-size="7" fill="#93C5FD">A Practitioner's Approach</text>
+  <!-- Architectural Bridge / City Silhouette -->
+  <g transform="translate(80, 130)">
+    <!-- Bridge Cables -->
+    <path d="M-50,25 Q-25,-15 0,25 Q25,-15 50,25" stroke="#60A5FA" stroke-width="1.5" fill="none"/>
+    <line x1="-50" y1="25" x2="50" y2="25" stroke="#93C5FD" stroke-width="2"/>
+    <line x1="-25" y1="5" x2="-25" y2="25" stroke="#93C5FD" stroke-width="1"/>
+    <line x1="25" y1="5" x2="25" y2="25" stroke="#93C5FD" stroke-width="1"/>
+    <!-- City Skyline Silhouette below -->
+    <rect x="-40" y="0" width="12" height="25" fill="#1E293B" opacity="0.6"/>
+    <rect x="-20" y="-10" width="14" height="35" fill="#0F172A" opacity="0.8"/>
+    <rect x="5" y="-18" width="16" height="43" fill="#0F172A" opacity="0.8"/>
+    <rect x="25" y="-5" width="12" height="30" fill="#1E293B" opacity="0.6"/>
+  </g>
+  <text x="80" y="196" font-family="'Inter', sans-serif" font-weight="600" font-size="7.5" fill="#CBD5E1" text-anchor="middle">Roger S. Pressman • Bruce Maxim</text>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 220" width="100%" height="100%">
+  <defs>
+    <linearGradient id="spaceDark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0A0A0B"/>
+      <stop offset="100%" stop-color="#18181B"/>
+    </linearGradient>
+    <linearGradient id="goldStreak" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="50%" stop-color="#FDE047"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+  </defs>
+  <rect width="160" height="220" rx="6" fill="url(#spaceDark)"/>
+  <rect x="0" y="0" width="8" height="220" fill="black" opacity="0.3"/>
+  
+  <!-- Stylized gold astronaut line / streak -->
+  <path d="M 25 35 Q 80 50 135 35 Q 110 90 140 120" stroke="url(#goldStreak)" stroke-width="3" fill="none" opacity="0.85"/>
+  <path d="M 20 60 Q 60 75 140 60" stroke="#FDE047" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <circle cx="80" cy="80" r="18" fill="#F59E0B" opacity="0.25"/>
+  <circle cx="80" cy="80" r="8" fill="#FDE047"/>
+  
+  <text x="80" y="130" font-family="'Impact', 'Arial Black', sans-serif" font-weight="900" font-size="14" fill="#FFFFFF" text-anchor="middle" letter-spacing="3">PROJECT</text>
+  <text x="80" y="152" font-family="'Impact', 'Arial Black', sans-serif" font-weight="900" font-size="18" fill="#F59E0B" text-anchor="middle" letter-spacing="2">HAIL MARY</text>
+  
+  <text x="80" y="188" font-family="'Inter', sans-serif" font-weight="700" font-size="11" fill="#E4E4E7" text-anchor="middle" letter-spacing="1">Andy Weir</text>
+</svg>

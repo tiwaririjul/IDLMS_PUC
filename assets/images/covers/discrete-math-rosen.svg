@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 220" width="100%" height="100%">
+  <rect width="160" height="220" rx="6" fill="#022C43"/>
+  <rect x="0" y="0" width="8" height="220" fill="black" opacity="0.3"/>
+  <text x="20" y="30" font-family="'Inter', sans-serif" font-weight="700" font-size="9" fill="#93C5FD">Discrete Mathematics</text>
+  <text x="20" y="44" font-family="'Inter', sans-serif" font-weight="700" font-size="9" fill="#93C5FD">and Its Applications</text>
+  <text x="20" y="58" font-family="'Inter', sans-serif" font-weight="800" font-size="11" fill="#38BDF8">Eighth Edition</text>
+  <!-- Geometric Fractal / Graph Matrix in Cyan -->
+  <g transform="translate(80, 135)" stroke="#38BDF8" stroke-width="1.2" fill="none">
+    <polygon points="0,-30 26,-15 26,15 0,30 -26,15 -26,-15"/>
+    <polygon points="0,-18 16,-9 16,9 0,18 -16,9 -16,-9" stroke="#0284C7"/>
+    <line x1="0" y1="-30" x2="0" y2="30"/>
+    <line x1="-26" y1="-15" x2="26" y2="15"/>
+    <line x1="-26" y1="15" x2="26" y2="-15"/>
+    <circle cx="0" cy="0" r="4" fill="#67E8F9"/>
+  </g>
+  <text x="80" y="198" font-family="'Inter', sans-serif" font-weight="600" font-size="8.5" fill="#E2E8F0" text-anchor="middle">Kenneth H. Rosen</text>
+</svg>

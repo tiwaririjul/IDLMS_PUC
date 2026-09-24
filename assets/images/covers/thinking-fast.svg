@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 220" width="100%" height="100%">
+  <rect width="160" height="220" rx="6" fill="#F8F6F0"/>
+  <rect x="0" y="0" width="8" height="220" fill="black" opacity="0.08"/>
+  <rect width="160" height="220" rx="6" fill="none" stroke="#E5E0D8" stroke-width="1.5"/>
+  
+  <text x="80" y="48" font-family="'Georgia', serif" font-weight="700" font-size="12" fill="#1C1917" text-anchor="middle" letter-spacing="1">THINKING,</text>
+  <text x="80" y="70" font-family="'Georgia', serif" font-weight="700" font-size="12" fill="#1C1917" text-anchor="middle" letter-spacing="1">FAST <tspan font-style="italic" font-weight="400">and</tspan> SLOW</text>
+  
+  <!-- Horizontal sharpened pencil -->
+  <g transform="translate(35, 108)">
+    <!-- eraser -->
+    <rect x="0" y="0" width="12" height="6" rx="1" fill="#F472B6"/>
+    <!-- ferrule -->
+    <rect x="12" y="0" width="8" height="6" fill="#D1D5DB"/>
+    <!-- pencil body -->
+    <rect x="20" y="0" width="55" height="6" fill="#F59E0B"/>
+    <!-- sharpened wood -->
+    <polygon points="75,0 87,3 75,6" fill="#FDE68A"/>
+    <!-- graphite tip -->
+    <polygon points="83,2 87,3 83,4" fill="#374151"/>
+  </g>
+  
+  <text x="80" y="165" font-family="'Georgia', serif" font-weight="700" font-size="12" fill="#1C1917" text-anchor="middle" letter-spacing="0.8">DANIEL</text>
+  <text x="80" y="185" font-family="'Georgia', serif" font-weight="700" font-size="12" fill="#1C1917" text-anchor="middle" letter-spacing="0.8">KAHNEMAN</text>
+</svg>

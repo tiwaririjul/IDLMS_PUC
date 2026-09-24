@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 280" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cnBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050814"/>
+      <stop offset="40%" stop-color="#0B132B"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <radialGradient id="globeAtmosphere" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.9"/>
+      <stop offset="40%" stop-color="#0284C7" stop-opacity="0.6"/>
+      <stop offset="80%" stop-color="#0369A1" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#0B132B" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="earthGlow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#BAE6FD" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#0EA5E9" stop-opacity="0.7"/>
+      <stop offset="85%" stop-color="#0369A1" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#082F49" stop-opacity="1"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Book Base -->
+  <rect width="200" height="280" rx="8" fill="url(#cnBg)"/>
+  <rect x="0" y="0" width="10" height="280" fill="#000000" opacity="0.35"/>
+
+  <!-- Top Title Typography -->
+  <text x="100" y="44" font-family="'Inter', sans-serif" font-weight="900" font-size="16" fill="#FFFFFF" text-anchor="middle" letter-spacing="1.2">COMPUTER</text>
+  <text x="100" y="65" font-family="'Inter', sans-serif" font-weight="900" font-size="16" fill="#FFFFFF" text-anchor="middle" letter-spacing="1.2">NETWORKING</text>
+  <text x="100" y="80" font-family="'Inter', sans-serif" font-weight="500" font-size="8" fill="#94A3B8" text-anchor="middle">A Top-Down Approach</text>
+  <text x="100" y="93" font-family="'Inter', sans-serif" font-weight="700" font-size="6.5" fill="#38BDF8" text-anchor="middle" letter-spacing="1.5">EIGHTH EDITION</text>
+  <text x="100" y="110" font-family="'Inter', sans-serif" font-weight="800" font-size="9" fill="#E2E8F0" text-anchor="middle" letter-spacing="1.5">KUROSE &#8226; ROSS</text>
+
+  <!-- Atmosphere Glow -->
+  <circle cx="100" cy="225" r="95" fill="url(#globeAtmosphere)"/>
+
+  <!-- Earth Globe (half showing at bottom) -->
+  <circle cx="100" cy="225" r="80" fill="url(#earthGlow)"/>
+
+  <!-- Continent Contours -->
+  <path d="M 60 175 Q 85 160 110 170 Q 140 165 155 185 Q 130 205 100 200 Q 70 205 60 175 Z" fill="#0369A1" opacity="0.5"/>
+  <path d="M 80 185 Q 100 175 125 180 Q 115 210 90 205 Z" fill="#38BDF8" opacity="0.3"/>
+
+  <!-- Network Arcs and Nodes Mesh -->
+  <g stroke="#E0F2FE" stroke-width="0.8" fill="none" opacity="0.8" filter="url(#glow)">
+    <ellipse cx="100" cy="185" rx="65" ry="30" stroke="#38BDF8" stroke-width="0.75"/>
+    <ellipse cx="100" cy="180" rx="50" ry="22" stroke="#7DD3FC" stroke-width="0.75"/>
+    <ellipse cx="100" cy="175" rx="35" ry="16" stroke="#BAE6FD" stroke-width="0.6"/>
+
+    <!-- Orbital network beams -->
+    <path d="M 40 180 Q 70 140 120 150 Q 160 160 170 190" stroke="#67E8F9" stroke-width="1.2"/>
+    <path d="M 50 195 Q 100 135 150 185" stroke="#38BDF8" stroke-width="1"/>
+    <path d="M 35 170 Q 100 120 165 175" stroke="#E0F2FE" stroke-width="0.9"/>
+    <path d="M 75 150 Q 100 130 125 155" stroke="#FFFFFF" stroke-width="1.1"/>
+  </g>
+
+  <!-- Glowing Nodes / Cities -->
+  <g fill="#FFFFFF" filter="url(#glow)">
+    <circle cx="100" cy="148" r="2.2" fill="#FFFFFF"/>
+    <circle cx="75" cy="155" r="1.8" fill="#38BDF8"/>
+    <circle cx="125" cy="152" r="1.8" fill="#38BDF8"/>
+    <circle cx="60" cy="172" r="1.8" fill="#67E8F9"/>
+    <circle cx="140" cy="168" r="1.8" fill="#67E8F9"/>
+    <circle cx="85" cy="170" r="1.5" fill="#FFFFFF"/>
+    <circle cx="115" cy="172" r="1.5" fill="#FFFFFF"/>
+    <circle cx="45" cy="185" r="1.6" fill="#38BDF8"/>
+    <circle cx="155" cy="182" r="1.6" fill="#38BDF8"/>
+  </g>
+
+  <!-- Pearson Logo at bottom-left -->
+  <g transform="translate(18, 252)">
+    <!-- Pearson P symbol -->
+    <circle cx="6" cy="6" r="6" fill="#0079C1"/>
+    <circle cx="6" cy="6" r="2.5" fill="#FFFFFF"/>
+    <text x="16" y="9" font-family="'Inter', sans-serif" font-weight="600" font-size="8" fill="#FFFFFF">Pearson</text>
+  </g>
+</svg>

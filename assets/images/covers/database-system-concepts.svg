@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 220" width="100%" height="100%">
+  <defs>
+    <linearGradient id="dbCoverGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E3A8A"/>
+    </linearGradient>
+  </defs>
+  <rect width="160" height="220" rx="6" fill="url(#dbCoverGrad)"/>
+  <rect x="0" y="0" width="8" height="220" fill="black" opacity="0.3"/>
+  <text x="20" y="34" font-family="'Inter', sans-serif" font-weight="800" font-size="12" fill="#FFFFFF">Database System</text>
+  <text x="20" y="48" font-family="'Inter', sans-serif" font-weight="800" font-size="12" fill="#FFFFFF">Concepts</text>
+  <text x="20" y="60" font-family="'Inter', sans-serif" font-weight="500" font-size="7" fill="#93C5FD">Seventh Edition</text>
+  <!-- 3D Database Cylinders stack in cyan/light blue -->
+  <g transform="translate(80, 130)">
+    <!-- Lower cylinder -->
+    <ellipse cx="0" cy="20" rx="30" ry="10" fill="#38BDF8" opacity="0.8"/>
+    <path d="M-30,20 L-30,35 A30,10 0 0,0 30,35 L30,20 Z" fill="#0284C7"/>
+    <ellipse cx="0" cy="35" rx="30" ry="10" fill="#0369A1"/>
+    <!-- Middle cylinder -->
+    <ellipse cx="0" cy="0" rx="28" ry="9" fill="#7DD3FC" opacity="0.9"/>
+    <path d="M-28,0 L-28,14 A28,9 0 0,0 28,14 L28,0 Z" fill="#0EA5E9"/>
+    <!-- Top cylinder -->
+    <ellipse cx="0" cy="-20" rx="26" ry="8" fill="#BAE6FD"/>
+    <path d="M-26,-20 L-26,-7 A26,8 0 0,0 26,-7 L26,-20 Z" fill="#38BDF8"/>
+  </g>
+  <text x="80" y="196" font-family="'Inter', sans-serif" font-weight="600" font-size="8" fill="#E2E8F0" text-anchor="middle">Silberschatz • Korth • Sudarshan</text>
+</svg>

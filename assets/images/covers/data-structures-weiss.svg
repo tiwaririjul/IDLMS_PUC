@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 220" width="100%" height="100%">
+  <rect width="160" height="220" rx="6" fill="#0C2340"/>
+  <rect x="0" y="0" width="8" height="220" fill="black" opacity="0.3"/>
+  <text x="20" y="30" font-family="'Inter', sans-serif" font-weight="700" font-size="9" fill="#E2E8F0">Data Structures and</text>
+  <text x="20" y="44" font-family="'Inter', sans-serif" font-weight="700" font-size="9" fill="#E2E8F0">Algorithm Analysis</text>
+  <text x="20" y="58" font-family="'Inter', sans-serif" font-weight="800" font-size="12" fill="#38BDF8">in C++</text>
+  <!-- Fiber / Starburst burst in cyan/blue -->
+  <g transform="translate(80, 135)" stroke="#38BDF8" stroke-width="1.2" opacity="0.75">
+    <circle cx="0" cy="0" r="16" fill="none" stroke="#0284C7" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="6" fill="#38BDF8"/>
+    <path d="M0,0 L-40,-25 M0,0 L-35,30 M0,0 L35,-25 M0,0 L40,25 M0,0 L0,-40 M0,0 L0,40 M0,0 L-45,0 M0,0 L45,0"/>
+    <circle cx="-40" cy="-25" r="2.5" fill="#7DD3FC"/>
+    <circle cx="35" cy="-25" r="2.5" fill="#7DD3FC"/>
+    <circle cx="-35" cy="30" r="2.5" fill="#7DD3FC"/>
+    <circle cx="40" cy="25" r="2.5" fill="#7DD3FC"/>
+  </g>
+  <text x="80" y="198" font-family="'Inter', sans-serif" font-weight="600" font-size="8" fill="#94A3B8" text-anchor="middle">Mark Allen Weiss</text>
+</svg>

@@ -1,0 +1,669 @@
+/* ==========================================================================
+   IDLMS - My Borrowings Specific Styles
+   ========================================================================== */
+
+.borrowings-main {
+    flex: 1;
+    padding: 1.75rem 2rem 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Page Header */
+.borrowings-header-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.borrowings-page-title {
+    font-size: 1.55rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    letter-spacing: -0.015em;
+}
+
+.borrowings-page-subtitle {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+}
+
+/* --- Top 4 KPI Cards Grid --- */
+.borrowings-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+}
+
+.borrowing-kpi-card {
+    background-color: #FFFFFF;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-xl);
+    padding: 1.2rem 1.25rem;
+    box-shadow: var(--shadow-xs);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 125px;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.borrowing-kpi-card:hover {
+    box-shadow: var(--shadow-sm);
+}
+
+.borrowing-kpi-top {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.borrowing-kpi-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.borrowing-kpi-icon svg {
+    width: 22px;
+    height: 22px;
+}
+
+.borrowing-kpi-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.borrowing-kpi-label {
+    font-size: 0.8125rem;
+    color: #6B7280;
+    font-weight: 500;
+}
+
+.borrowing-kpi-value {
+    font-size: 1.65rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    line-height: 1.1;
+    margin-top: 0.1rem;
+}
+
+.borrowing-kpi-subtext {
+    font-size: 0.72rem;
+    color: #6B7280;
+    margin-top: 0.85rem;
+}
+
+/* --- Main Split Grid: Table (73%) + Sidebar (27%) --- */
+.borrowings-content-grid {
+    display: grid;
+    grid-template-columns: 1fr 310px;
+    gap: 1.25rem;
+    align-items: start;
+}
+
+/* --- Left Card: Borrowings Table --- */
+.borrowings-table-card {
+    background-color: #FFFFFF;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-xs);
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Tabs & Sort Controls */
+.borrowings-controls-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.85rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.borrowings-tabs-group {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.borrowing-tab-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: none;
+    border: none;
+    font-size: 0.825rem;
+    font-weight: 500;
+    color: #6B7280;
+    cursor: pointer;
+    padding: 0.4rem 0.2rem;
+    position: relative;
+    font-family: var(--font-family);
+    transition: color 0.15s ease;
+}
+
+.borrowing-tab-btn:hover {
+    color: var(--text-dark);
+}
+
+.borrowing-tab-btn.active {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.borrowing-tab-btn.active::after {
+    content: '';
+    position: absolute;
+    bottom: -0.95rem;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: var(--primary);
+    border-radius: 2px;
+}
+
+.tab-count-pill {
+    padding: 0.15rem 0.5rem;
+    font-size: 0.6875rem;
+    font-weight: 600;
+    border-radius: var(--radius-full);
+    background-color: #F1F5F9;
+    color: #475569;
+}
+
+.tab-count-pill.active {
+    background-color: #2563EB;
+    color: #FFFFFF;
+}
+
+.sort-select-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.sort-select {
+    padding: 0.45rem 1.75rem 0.45rem 0.75rem;
+    font-size: 0.78rem;
+    font-family: var(--font-family);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    background-color: #FFFFFF;
+    color: #374151;
+    font-weight: 500;
+    cursor: pointer;
+    outline: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%236B7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.6rem center;
+    transition: border-color 0.15s;
+}
+
+.sort-select:focus {
+    border-color: var(--primary);
+}
+
+/* --- Borrowings Table Layout --- */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.borrowings-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.borrowings-table th {
+    padding: 0.75rem 0.85rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #6B7280;
+    border-bottom: 1px solid #E5E7EB;
+    white-space: nowrap;
+}
+
+.borrowings-table td {
+    padding: 0.95rem 0.85rem;
+    border-bottom: 1px solid #F1F5F9;
+    vertical-align: middle;
+}
+
+.borrowings-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Resource Cell */
+.resource-cell {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    min-width: 180px;
+    cursor: pointer;
+}
+
+.resource-cell:hover .resource-title {
+    color: var(--primary);
+}
+
+.book-title-link,
+.book-cover-link {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.book-cover-link {
+    display: flex;
+    flex-shrink: 0;
+}
+
+.resource-thumb {
+    width: 36px;
+    height: 50px;
+    border-radius: 4px;
+    object-fit: cover;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    background-color: #E2E8F0;
+    flex-shrink: 0;
+    transition: transform 0.15s ease;
+}
+
+.resource-cell:hover .resource-thumb {
+    transform: scale(1.04);
+}
+
+.resource-meta {
+    display: flex;
+    flex-direction: column;
+}
+
+.resource-title {
+    font-size: 0.825rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    line-height: 1.25;
+    transition: color 0.15s ease;
+}
+
+.resource-type {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+}
+
+.author-cell {
+    font-size: 0.8rem;
+    color: #374151;
+    white-space: nowrap;
+}
+
+.date-cell {
+    font-size: 0.8rem;
+    color: #374151;
+    white-space: nowrap;
+}
+
+.due-date-cell {
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+}
+
+.due-date-main {
+    font-size: 0.8rem;
+    color: #374151;
+}
+
+.due-date-sub {
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.due-amber { color: #D97706; }
+.due-green { color: #15803D; }
+.due-red { color: #DC2626; }
+
+/* Actions Cell */
+.actions-cell {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.35rem;
+}
+
+.action-top-row {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+.btn-renew {
+    background-color: #FFFFFF;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--primary);
+    cursor: pointer;
+    font-family: var(--font-family);
+    transition: all 0.15s ease;
+}
+
+.btn-renew:hover {
+    border-color: var(--primary);
+    background-color: #EFF6FF;
+}
+
+.btn-actions-dots {
+    background: none;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+    padding: 0.25rem 0.4rem;
+    color: #6B7280;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    line-height: 1;
+    transition: all 0.15s;
+}
+
+.btn-actions-dots:hover {
+    color: var(--text-dark);
+    border-color: #9CA3AF;
+    background-color: #F8FAFC;
+}
+
+.view-details-link {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--primary);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    transition: color 0.15s;
+}
+
+.view-details-link:hover {
+    color: var(--primary-hover);
+}
+
+/* --- Table Footer Pagination --- */
+.table-footer-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.85rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.table-summary-text {
+    font-size: 0.76rem;
+    color: var(--text-muted);
+}
+
+.pagination-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+.page-btn {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border-color);
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    font-size: 0.78rem;
+    color: #6B7280;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.page-btn:hover:not(:disabled) {
+    background-color: #F8FAFC;
+    color: var(--text-dark);
+}
+
+.page-btn.active {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+.page-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* --- Right Column: Summary & Help Cards --- */
+.borrowings-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.borrowing-summary-card {
+    background-color: #FFFFFF;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-xl);
+    padding: 1.25rem;
+    box-shadow: var(--shadow-xs);
+    display: flex;
+    flex-direction: column;
+    gap: 1.15rem;
+}
+
+.summary-card-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.summary-metric-block {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.summary-row-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.8125rem;
+}
+
+.summary-metric-label {
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+.summary-metric-val {
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.summary-progress-track {
+    width: 100%;
+    height: 6px;
+    background-color: #E2E8F0;
+    border-radius: var(--radius-full);
+    overflow: hidden;
+}
+
+.summary-progress-fill {
+    height: 100%;
+    background-color: #2563EB;
+    border-radius: var(--radius-full);
+}
+
+.summary-row-sub {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.7rem;
+    color: var(--text-muted);
+}
+
+.summary-divider {
+    height: 1px;
+    background-color: #F1F5F9;
+}
+
+/* Purple Renewal Promo Card */
+.renewal-promo-card {
+    background: linear-gradient(135deg, #FAF5FF 0%, #F5F3FF 100%);
+    border: 1px solid #EDE9FE;
+    border-radius: var(--radius-xl);
+    padding: 1.25rem;
+    box-shadow: var(--shadow-xs);
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+}
+
+.renewal-promo-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.renewal-promo-title {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.renewal-promo-icon-wrap {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #EDE9FE;
+    color: #7C3AED;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.renewal-promo-icon-wrap svg {
+    width: 16px;
+    height: 16px;
+}
+
+.renewal-promo-desc {
+    font-size: 0.78rem;
+    color: #6B7280;
+    line-height: 1.4;
+}
+
+.btn-renewal-policy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.45rem;
+    padding: 0.65rem 1rem;
+    background-color: #7C3AED;
+    color: #FFFFFF;
+    border: none;
+    border-radius: var(--radius-md);
+    font-size: 0.825rem;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: var(--font-family);
+    transition: background 0.15s ease;
+    text-decoration: none;
+}
+
+.btn-renewal-policy:hover {
+    background-color: #6D28D9;
+}
+
+/* Quick Help Card */
+.quick-help-card {
+    background-color: #FFFFFF;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-xl);
+    padding: 1.25rem;
+    box-shadow: var(--shadow-xs);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.quick-help-title {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 0.25rem;
+}
+
+.quick-help-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.quick-help-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0.25rem;
+    font-size: 0.8rem;
+    color: #374151;
+    text-decoration: none;
+    transition: color 0.15s ease;
+    cursor: pointer;
+}
+
+.quick-help-item:hover {
+    color: var(--primary);
+}
+
+.quick-help-left {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+}
+
+.quick-help-left svg {
+    width: 16px;
+    height: 16px;
+    color: #6B7280;
+    flex-shrink: 0;
+}
+
+.quick-help-item:hover .quick-help-left svg {
+    color: var(--primary);
+}
+
+.quick-help-chevron {
+    font-size: 0.85rem;
+    color: #9CA3AF;
+    transition: transform 0.15s;
+}
+
+.quick-help-item:hover .quick-help-chevron {
+    transform: translateX(2px);
+    color: var(--primary);
+}

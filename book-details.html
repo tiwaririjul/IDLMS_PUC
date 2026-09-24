@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDLMS - Book Details</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/book-details.css">
+</head>
+<body>
+    <div class="app-layout">
+        <!-- ==================== SIDEBAR ==================== -->
+        <aside class="sidebar">
+            <div class="sidebar-top-group">
+                <!-- Logo -->
+                <div class="sidebar-header">
+                    <a href="dashboard.html" class="sidebar-logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                        </svg>
+                        IDLMS
+                    </a>
+                </div>
+
+                <!-- Navigation Links -->
+                <nav class="sidebar-nav">
+                    <a href="dashboard.html" class="nav-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path>
+                        </svg>
+                        <span>Dashboard</span>
+                    </a>
+
+                    <a href="discover.html" class="nav-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                        <span>Discover</span>
+                    </a>
+
+                    <a href="borrowings.html" class="nav-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"></path>
+                            <path d="M6 6h10"></path>
+                            <path d="M6 10h10"></path>
+                        </svg>
+                        <span>My Borrowings</span>
+                    </a>
+
+                    <a href="reservations.html" class="nav-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect>
+                            <line x1="16" x2="16" y1="2" y2="6"></line>
+                            <line x1="8" x2="8" y1="2" y2="6"></line>
+                            <line x1="3" x2="21" y1="10" y2="10"></line>
+                        </svg>
+                        <span>Reservations</span>
+                    </a>
+
+                    <a href="digital-library.html" class="nav-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                        </svg>
+                        <span>Digital Library</span>
+                    </a>
+
+                    <a href="reading-history.html" class="nav-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 14 14"></polyline>
+                        </svg>
+                        <span>Reading History</span>
+                    </a>
+
+                    <a href="fines.html" class="nav-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path>
+                            <path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path>
+                            <path d="M7 21h10"></path>
+                            <path d="M12 3v18"></path>
+                            <path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"></path>
+                        </svg>
+                        <span>Fines</span>
+                    </a>
+
+                    <a href="#" class="nav-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"></path>
+                        </svg>
+                        <span>AI Assistant</span>
+                        <span class="nav-badge nav-badge-purple">New</span>
+                    </a>
+
+                    <a href="#" class="nav-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"></path>
+                            <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"></path>
+                        </svg>
+                        <span>Notifications</span>
+                        <span class="nav-dot"></span>
+                    </a>
+
+                    <a href="#" class="nav-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                        <span>Profile</span>
+                    </a>
+
+                    <a href="#" class="nav-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg>
+                        <span>Settings</span>
+                    </a>
+                </nav>
+            </div>
+
+            <!-- Bottom Promo Card -->
+            <div class="sidebar-promo">
+                <div class="sidebar-promo-img-wrap">
+                    <img src="assets/images/digital-lib-promo.svg" alt="Explore the digital library">
+                </div>
+                <h4>Explore the digital library</h4>
+                <p>Thousands of e-books, journals and resources at your fingertips.</p>
+                <a href="digital-library.html">Explore Now &rarr;</a>
+            </div>
+        </aside>
+
+        <!-- ==================== MAIN CONTENT WRAPPER ==================== -->
+        <div class="main-wrapper">
+            <!-- Top Header -->
+            <header class="top-header">
+                <form class="header-search" id="headerSearchForm" action="search-results.html" method="GET">
+                    <svg class="header-search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <input type="text" name="q" id="globalSearchInput" class="header-search-input" placeholder="Search books, authors, topics, ISBN...">
+                    <span class="search-shortcut-kbd">&#8984; K</span>
+                </form>
+
+                <div class="header-right">
+                    <!-- Notifications -->
+                    <div class="dropdown-container">
+                        <button type="button" class="header-notification-btn" id="notifBtn" title="Notifications">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"></path>
+                                <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"></path>
+                            </svg>
+                            <span class="notification-count-badge">3</span>
+                        </button>
+                        <div class="popover-menu" id="notifMenu" style="width: 280px;">
+                            <div style="padding: 0.5rem 1rem; font-weight: 700; font-size: 0.85rem; border-bottom: 1px solid #E5E7EB;">
+                                Notifications (3)
+                            </div>
+                            <div class="popover-item" style="flex-direction: column; align-items: flex-start; gap: 2px;">
+                                <span style="font-weight: 600; color: #111827;">Book Due in 2 days</span>
+                                <span style="font-size: 0.72rem; color: #6B7280;">Deep Work is due on 26 May 2025</span>
+                            </div>
+                            <div class="popover-item" style="flex-direction: column; align-items: flex-start; gap: 2px;">
+                                <span style="font-weight: 600; color: #111827;">Reservation Available</span>
+                                <span style="font-size: 0.72rem; color: #6B7280;">Thinking, Fast and Slow is ready for pickup</span>
+                            </div>
+                            <div class="popover-item" style="flex-direction: column; align-items: flex-start; gap: 2px;">
+                                <span style="font-weight: 600; color: #DC2626;">Fine Reminder</span>
+                                <span style="font-size: 0.72rem; color: #6B7280;">Outstanding library balance: ₹120</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- User Profile -->
+                    <div class="dropdown-container">
+                        <div class="user-profile-widget" id="profileWidget">
+                            <img src="assets/images/avatar.svg" alt="Rijul Patel" class="user-avatar-img">
+                            <div class="user-meta">
+                                <span class="user-name">Rijul Patel</span>
+                                <span class="user-member-id">Member ID: 20240078</span>
+                            </div>
+                        </div>
+                        <div class="popover-menu" id="profileMenu">
+                            <a href="#" class="popover-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                                <span>My Profile</span>
+                            </a>
+                            <a href="borrowings.html" class="popover-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"></path></svg>
+                                <span>Borrowing History</span>
+                            </a>
+                            <a href="#" class="popover-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path></svg>
+                                <span>Account Settings</span>
+                            </a>
+                            <div class="popover-divider"></div>
+                            <a href="index.html" class="popover-item" style="color: #DC2626;">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: #DC2626;"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+                                <span>Sign Out</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Main Book Details Body -->
+            <main class="book-details-main">
+                <!-- Back navigation link -->
+                <div class="back-nav-wrap">
+                    <a href="dashboard.html" class="back-nav-link" id="backBtn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="19" y1="12" x2="5" y2="12"></line>
+                            <polyline points="12 19 5 12 12 5"></polyline>
+                        </svg>
+                        <span>Back</span>
+                    </a>
+                </div>
+
+                <!-- Main White Card: Left Info & Right Actions -->
+                <div class="book-details-card">
+                    <!-- Left Section: Cover + Metadata + Specifications + About -->
+                    <div class="book-details-left">
+                        <!-- Top Row: Cover and Core Meta -->
+                        <div class="book-hero-section">
+                            <!-- Large Book Cover -->
+                            <div class="book-cover-large-wrap">
+                                <img src="assets/images/covers/computer-networking.svg" alt="Computer Networking" id="bookCover" class="book-cover-large">
+                            </div>
+
+                            <!-- Meta Details -->
+                            <div class="book-info-col">
+                                <span class="book-type-pill" id="bookTypeBadge">Book</span>
+                                <h1 class="book-details-title" id="bookTitle">Computer Networking</h1>
+                                <p class="book-details-subtitle" id="bookSubtitle">A Top-Down Approach</p>
+
+                                <div class="book-authors-row">
+                                    <span class="book-author-primary" id="bookAuthor">By James F. Kurose</span>
+                                    <span class="book-author-secondary" id="bookCoAuthor">Co-author: Keith W. Ross</span>
+                                </div>
+
+                                <div class="book-rating-row">
+                                    <svg class="star-icon-gold" viewBox="0 0 24 24" fill="currentColor">
+                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                    </svg>
+                                    <span class="rating-score" id="bookRating">4.6</span>
+                                    <span class="rating-count" id="bookRatingCount">(1,245 ratings)</span>
+                                    <a class="view-reviews-link" id="viewReviewsLink">
+                                        <span>View reviews</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                            <polyline points="12 5 19 12 12 19"></polyline>
+                                        </svg>
+                                    </a>
+                                </div>
+
+                                <div class="book-avail-row">
+                                    <div class="badge-available-green" id="bookAvailBadge">
+                                        <span class="badge-available-dot" id="bookAvailDot"></span>
+                                        <span id="bookAvailText">Available</span>
+                                    </div>
+                                    <span class="copies-text" id="bookCopiesText">Copies available: 6 of 12</span>
+                                </div>
+
+                                <!-- 2-Column Specifications Grid -->
+                                <div class="book-specs-grid">
+                                    <!-- 1. Branch -->
+                                    <div class="spec-item">
+                                        <div class="spec-icon-box">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                                <rect width="16" height="20" x="4" y="2" rx="2" ry="2"></rect>
+                                                <path d="M9 22v-4h6v4"></path>
+                                                <path d="M8 6h.01"></path>
+                                                <path d="M16 6h.01"></path>
+                                                <path d="M8 10h.01"></path>
+                                                <path d="M16 10h.01"></path>
+                                                <path d="M8 14h.01"></path>
+                                                <path d="M16 14h.01"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="spec-details">
+                                            <span class="spec-label">Branch</span>
+                                            <span class="spec-value" id="bookBranch">Central Library</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- 2. Shelf -->
+                                    <div class="spec-item">
+                                        <div class="spec-icon-box">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"></path>
+                                                <path d="M6 6h10"></path>
+                                                <path d="M6 10h10"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="spec-details">
+                                            <span class="spec-label">Shelf</span>
+                                            <span class="spec-value" id="bookShelf">Shelf 3</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- 3. Rack -->
+                                    <div class="spec-item">
+                                        <div class="spec-icon-box">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                                <rect width="20" height="8" x="2" y="2" rx="2" ry="2"></rect>
+                                                <rect width="20" height="8" x="2" y="14" rx="2" ry="2"></rect>
+                                                <line x1="6" x2="6.01" y1="6" y2="6"></line>
+                                                <line x1="6" x2="6.01" y1="18" y2="18"></line>
+                                            </svg>
+                                        </div>
+                                        <div class="spec-details">
+                                            <span class="spec-label">Rack</span>
+                                            <span class="spec-value" id="bookRack">R2 – Networking</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- 4. Edition -->
+                                    <div class="spec-item">
+                                        <div class="spec-icon-box">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="spec-details">
+                                            <span class="spec-label">Edition</span>
+                                            <span class="spec-value" id="bookEdition">8th Edition</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- 5. Publisher -->
+                                    <div class="spec-item">
+                                        <div class="spec-icon-box">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"></path>
+                                                <line x1="10" x2="16" y1="8" y2="8"></line>
+                                                <line x1="10" x2="16" y1="12" y2="12"></line>
+                                            </svg>
+                                        </div>
+                                        <div class="spec-details">
+                                            <span class="spec-label">Publisher</span>
+                                            <span class="spec-value" id="bookPublisher">Pearson Education</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- 6. Publication Year -->
+                                    <div class="spec-item">
+                                        <div class="spec-icon-box">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                                <rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect>
+                                                <line x1="16" x2="16" y1="2" y2="6"></line>
+                                                <line x1="8" x2="8" y1="2" y2="6"></line>
+                                                <line x1="3" x2="21" y1="10" y2="10"></line>
+                                            </svg>
+                                        </div>
+                                        <div class="spec-details">
+                                            <span class="spec-label">Publication Year</span>
+                                            <span class="spec-value" id="bookYear">2021</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- 7. Language -->
+                                    <div class="spec-item">
+                                        <div class="spec-icon-box">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                                <circle cx="12" cy="12" r="10"></circle>
+                                                <line x1="2" x2="22" y1="12" y2="12"></line>
+                                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="spec-details">
+                                            <span class="spec-label">Language</span>
+                                            <span class="spec-value" id="bookLanguage">English</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- 8. Subject / Category -->
+                                    <div class="spec-item">
+                                        <div class="spec-icon-box">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="spec-details">
+                                            <span class="spec-label">Subject / Category</span>
+                                            <span class="spec-value" id="bookCategory">Computer Science / Networking</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bottom: About this book Section -->
+                        <div class="book-about-section">
+                            <h3 class="about-heading">About this book</h3>
+                            <p class="about-text" id="bookAbout">
+                                This bestselling text provides a comprehensive introduction to computer networking through the innovative top-down approach. It balances theory and practice with real-world examples, making complex concepts easy to understand. The 8th Edition includes updated coverage of wireless, mobile, and cloud networking, along with new exercises and review questions.
+                            </p>
+                            <p class="about-text about-extended-text" id="bookAboutExtended">
+                                Widely adopted by academic institutions and networking professionals worldwide, this edition incorporates recent advancements in networking architecture, Software-Defined Networking (SDN), internet security, and modern transport layer protocols including QUIC. Features hands-on Wireshark lab assignments and comprehensive end-of-chapter problems.
+                            </p>
+                            <button type="button" class="btn-show-more" id="btnShowMore">
+                                <span>Show more</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Right Section: Action Panel Stack -->
+                    <div class="book-actions-sidebar">
+                        <!-- 1. Borrow Book Primary Action -->
+                        <button type="button" class="btn-action-borrow" id="btnBorrowBook">
+                            <div class="action-btn-main-row">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"></path>
+                                    <path d="M6 6h10"></path>
+                                    <path d="M6 10h10"></path>
+                                </svg>
+                                <span>Borrow Book</span>
+                            </div>
+                            <span class="action-btn-subtext">Borrow for up to 14 days</span>
+                        </button>
+
+                        <!-- 2. Reserve Book Secondary Action -->
+                        <button type="button" class="btn-action-reserve" id="btnReserveBook">
+                            <div class="action-btn-main-row">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                                    <line x1="12" y1="7" x2="12" y2="13"></line>
+                                    <line x1="9" y1="10" x2="15" y2="10"></line>
+                                </svg>
+                                <span>Reserve Book</span>
+                            </div>
+                            <span class="action-btn-subtext">Reserve for future availability</span>
+                        </button>
+
+                        <!-- 3. Read Online Action -->
+                        <button type="button" class="btn-action-read" id="btnReadOnline">
+                            <div class="action-btn-main-row">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect width="20" height="14" x="2" y="3" rx="2"></rect>
+                                    <line x1="8" x2="16" y1="21" y2="21"></line>
+                                    <line x1="12" x2="12" y1="17" y2="21"></line>
+                                </svg>
+                                <span>Read Online</span>
+                            </div>
+                            <span class="action-btn-subtext">Access e-book in library</span>
+                        </button>
+
+                        <!-- 4. Add to Reading List Action -->
+                        <button type="button" class="btn-action-bookmark" id="btnBookmark">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"></path>
+                            </svg>
+                            <span id="bookmarkBtnText">Add to Reading List</span>
+                        </button>
+
+                        <!-- 5. Ask AI Action -->
+                        <button type="button" class="btn-action-ai" id="btnAskAI">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"></path>
+                            </svg>
+                            <span>Ask AI about this book</span>
+                            <span class="ai-beta-tag">Beta</span>
+                        </button>
+
+                        <!-- 6. Due Date Card -->
+                        <div class="due-date-card" id="dueDateCard">
+                            <div class="due-icon-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect>
+                                    <line x1="16" x2="16" y1="2" y2="6"></line>
+                                    <line x1="8" x2="8" y1="2" y2="6"></line>
+                                    <line x1="3" x2="21" y1="10" y2="10"></line>
+                                </svg>
+                            </div>
+                            <div class="due-meta">
+                                <span class="due-label">Due date for borrowed book</span>
+                                <span class="due-value" id="bookDueDate">28 May 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Tabs: About, Reviews, Related Books -->
+                <div class="details-tabs-row">
+                    <button type="button" class="detail-tab-btn active" data-tab="about">About</button>
+                    <button type="button" class="detail-tab-btn" data-tab="reviews" id="tabReviewsBtn">Reviews (1,245)</button>
+                    <button type="button" class="detail-tab-btn" data-tab="related" id="tabRelatedBtn">Related Books</button>
+                </div>
+
+                <!-- Tab Panel 1 & Default: Related Books Section -->
+                <div class="tab-panel active" id="panel-about">
+                    <section class="related-books-section">
+                        <div class="related-header-row">
+                            <h2 class="related-title">Related Books</h2>
+                            <a href="discover.html" class="related-view-all">
+                                <span>View all</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="related-cards-wrapper">
+                            <!-- 5 Related Cards Grid -->
+                            <div class="related-cards-grid" id="relatedCardsGrid">
+                                <!-- Card 1: Data Communications and Networking -->
+                                <a href="book-details.html?id=data-communications" class="related-book-card">
+                                    <div class="related-cover-thumb">
+                                        <img src="assets/images/covers/data-comm.svg" alt="Data Communications and Networking">
+                                    </div>
+                                    <div class="related-meta">
+                                        <h3 class="related-book-title">Data Communications and Networking</h3>
+                                        <span class="related-book-author">Behrouz A. Forouzan</span>
+                                        <div class="related-rating-row">
+                                            <svg class="star-icon-gold" viewBox="0 0 24 24" fill="currentColor" width="12" height="12">
+                                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                            </svg>
+                                            <span>4.5</span>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <!-- Card 2: TCP/IP Illustrated Volume 1 -->
+                                <a href="book-details.html?id=tcp-ip-illustrated" class="related-book-card">
+                                    <div class="related-cover-thumb">
+                                        <img src="assets/images/covers/tcp-ip-illustrated.svg" alt="TCP/IP Illustrated Volume 1">
+                                    </div>
+                                    <div class="related-meta">
+                                        <h3 class="related-book-title">TCP/IP Illustrated Volume 1</h3>
+                                        <span class="related-book-author">W. Richard Stevens</span>
+                                        <div class="related-rating-row">
+                                            <svg class="star-icon-gold" viewBox="0 0 24 24" fill="currentColor" width="12" height="12">
+                                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                            </svg>
+                                            <span>4.6</span>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <!-- Card 3: Wireless Communications -->
+                                <a href="book-details.html?id=wireless-communications" class="related-book-card">
+                                    <div class="related-cover-thumb">
+                                        <img src="assets/images/covers/wireless-comm.svg" alt="Wireless Communications">
+                                    </div>
+                                    <div class="related-meta">
+                                        <h3 class="related-book-title">Wireless Communications</h3>
+                                        <span class="related-book-author">Andrea Goldsmith</span>
+                                        <div class="related-rating-row">
+                                            <svg class="star-icon-gold" viewBox="0 0 24 24" fill="currentColor" width="12" height="12">
+                                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                            </svg>
+                                            <span>4.4</span>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <!-- Card 4: Network Security Essentials -->
+                                <a href="book-details.html?id=network-security" class="related-book-card">
+                                    <div class="related-cover-thumb">
+                                        <img src="assets/images/covers/network-security.svg" alt="Network Security Essentials">
+                                    </div>
+                                    <div class="related-meta">
+                                        <h3 class="related-book-title">Network Security Essentials</h3>
+                                        <span class="related-book-author">William Stallings</span>
+                                        <div class="related-rating-row">
+                                            <svg class="star-icon-gold" viewBox="0 0 24 24" fill="currentColor" width="12" height="12">
+                                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                            </svg>
+                                            <span>4.3</span>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <!-- Card 5: Operating System Concepts -->
+                                <a href="book-details.html?id=operating-system-concepts" class="related-book-card">
+                                    <div class="related-cover-thumb">
+                                        <img src="assets/images/covers/os-concepts.svg" alt="Operating System Concepts">
+                                    </div>
+                                    <div class="related-meta">
+                                        <h3 class="related-book-title">Operating System Concepts</h3>
+                                        <span class="related-book-author">Abraham Silberschatz</span>
+                                        <div class="related-rating-row">
+                                            <svg class="star-icon-gold" viewBox="0 0 24 24" fill="currentColor" width="12" height="12">
+                                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                            </svg>
+                                            <span>4.4</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Carousel arrow button -->
+                            <button type="button" class="related-next-btn" id="relatedNextBtn" title="Next related books">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </button>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Tab Panel 2: Reviews Panel -->
+                <div class="tab-panel" id="panel-reviews">
+                    <section class="reviews-section-panel">
+                        <div class="reviews-header">
+                            <div class="reviews-summary-score">
+                                <span class="big-rating-number" id="reviewBigRating">4.6</span>
+                                <div class="stars-rating-wrap">
+                                    <div style="display: flex; gap: 2px;">
+                                        <svg class="star-icon-gold" viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                        <svg class="star-icon-gold" viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                        <svg class="star-icon-gold" viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                        <svg class="star-icon-gold" viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                        <svg class="star-icon-gold" viewBox="0 0 24 24" fill="currentColor" width="16" height="16" style="opacity: 0.5;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                    </div>
+                                    <span style="font-size: 0.78rem; color: #6B7280;" id="reviewTotalRatings">Based on 1,245 verified ratings</span>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-secondary" id="btnWriteReview" style="font-size: 0.8rem; padding: 0.5rem 0.9rem;">Write a Review</button>
+                        </div>
+
+                        <!-- Reviews List Container -->
+                        <div class="reviews-list-container" id="reviewsListContainer">
+                            <!-- Populated dynamically -->
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Footer Navigation Bar -->
+                <footer class="page-footer">
+                    <div class="footer-left">&copy; 2025 IDLMS. All rights reserved.</div>
+                    <div class="footer-right">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Use</a>
+                        <a href="#">Help Center</a>
+                    </div>
+                </footer>
+            </main>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

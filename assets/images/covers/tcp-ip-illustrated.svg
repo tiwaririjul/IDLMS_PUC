@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 220" width="100%" height="100%">
+  <defs>
+    <linearGradient id="tcpBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E3A8A"/>
+      <stop offset="100%" stop-color="#172554"/>
+    </linearGradient>
+  </defs>
+  <rect width="160" height="220" rx="6" fill="url(#tcpBg)"/>
+  <rect x="0" y="0" width="8" height="220" fill="black" opacity="0.3"/>
+  <rect x="12" y="12" width="136" height="196" rx="4" fill="none" stroke="#60A5FA" stroke-width="1" opacity="0.4"/>
+  
+  <text x="80" y="44" font-family="'Georgia', serif" font-weight="900" font-size="16" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">TCP/IP</text>
+  <text x="80" y="66" font-family="'Georgia', serif" font-weight="700" font-size="12" fill="#93C5FD" text-anchor="middle">Illustrated</text>
+  <text x="80" y="80" font-family="'Georgia', serif" font-style="italic" font-size="8.5" fill="#E2E8F0" text-anchor="middle">Volume 1: The Protocols</text>
+  
+  <!-- Stylized protocol packet layers diagram -->
+  <g transform="translate(80, 125)" stroke="#93C5FD" stroke-width="1.2" fill="none">
+    <rect x="-35" y="-24" width="70" height="12" rx="2" fill="#1E40AF" opacity="0.6"/>
+    <text x="0" y="-15" font-family="'Inter', sans-serif" font-size="6.5" fill="#FFFFFF" text-anchor="middle">Application Layer</text>
+    
+    <rect x="-35" y="-8" width="70" height="12" rx="2" fill="#2563EB" opacity="0.6"/>
+    <text x="0" y="1" font-family="'Inter', sans-serif" font-size="6.5" fill="#FFFFFF" text-anchor="middle">Transport (TCP/UDP)</text>
+    
+    <rect x="-35" y="8" width="70" height="12" rx="2" fill="#3B82F6" opacity="0.6"/>
+    <text x="0" y="17" font-family="'Inter', sans-serif" font-size="6.5" fill="#FFFFFF" text-anchor="middle">Network (IP)</text>
+  </g>
+  
+  <text x="80" y="185" font-family="'Georgia', serif" font-weight="700" font-size="9.5" fill="#F8FAFC" text-anchor="middle">W. Richard Stevens</text>
+  <text x="80" y="198" font-family="'Georgia', serif" font-size="7.5" fill="#93C5FD" text-anchor="middle">Kevin R. Fall</text>
+</svg>

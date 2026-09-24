@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 220" width="100%" height="100%">
+  <defs>
+    <linearGradient id="sapiensBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1C1A17"/>
+      <stop offset="100%" stop-color="#0E0D0B"/>
+    </linearGradient>
+    <radialGradient id="sunGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FCD34D" stop-opacity="0.8"/>
+      <stop offset="40%" stop-color="#D97706" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="160" height="220" rx="6" fill="url(#sapiensBg)"/>
+  <rect x="0" y="0" width="8" height="220" fill="black" opacity="0.3"/>
+  
+  <!-- Subtle circular sun / fingerprint -->
+  <circle cx="80" cy="115" r="32" fill="url(#sunGlow)"/>
+  <circle cx="80" cy="115" r="24" stroke="#F59E0B" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <circle cx="80" cy="115" r="16" stroke="#D97706" stroke-width="1.2" fill="none" opacity="0.5"/>
+  <circle cx="80" cy="115" r="8" stroke="#B45309" stroke-width="1" fill="none" opacity="0.4"/>
+  
+  <text x="80" y="48" font-family="'Georgia', serif" font-weight="700" font-size="21" fill="#FDFBF7" text-anchor="middle" letter-spacing="1.5">Sapiens</text>
+  <text x="80" y="65" font-family="'Georgia', serif" font-style="italic" font-size="8.5" fill="#D1D5DB" text-anchor="middle">A Brief History of Humankind</text>
+  
+  <text x="80" y="185" font-family="'Georgia', serif" font-weight="600" font-size="11.5" fill="#F3F4F6" text-anchor="middle" letter-spacing="0.5">Yuval Noah Harari</text>
+</svg>
